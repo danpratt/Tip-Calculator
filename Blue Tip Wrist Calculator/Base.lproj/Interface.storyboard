@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A319" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Blue_Tip_Wrist_Calculator_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Bill total: $0.00" textAlignment="left" id="qIS-Xf-j6n"/>
+                        <group width="1" alignment="center" id="TMB-O4-bWY">
+                            <items>
+                                <button width="0.33000000000000002" height="28" alignment="left" title="7" id="UOF-Rr-t7b">
+                                    <connections>
+                                        <action selector="sevenPressed" destination="AgC-eL-Hgc" id="GCq-0F-DiC"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="8" id="bAl-h3-fhG">
+                                    <connections>
+                                        <action selector="eightPressed" destination="AgC-eL-Hgc" id="uhG-2Z-GGB"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" title="9" id="dvd-yb-qWt">
+                                    <connections>
+                                        <action selector="ninePressed" destination="AgC-eL-Hgc" id="UYf-4E-kQG"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" id="Gqe-sW-QLI">
+                            <items>
+                                <button width="0.33000000000000002" height="28" alignment="left" title="4" id="cL5-VT-FnF">
+                                    <connections>
+                                        <action selector="fourPressed" destination="AgC-eL-Hgc" id="smt-dV-A8y"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="28" alignment="left" title="5" id="Hpm-NN-qot">
+                                    <connections>
+                                        <action selector="fivePressed" destination="AgC-eL-Hgc" id="zEW-vc-fny"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="28" alignment="left" title="6" id="Nub-dz-UBi">
+                                    <connections>
+                                        <action selector="sixPressed" destination="AgC-eL-Hgc" id="mrC-hm-gjP"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" id="iYV-sf-kxq">
+                            <items>
+                                <button width="0.33000000000000002" height="28" alignment="left" title="1" id="0Zl-2y-hmj">
+                                    <connections>
+                                        <action selector="onePressed" destination="AgC-eL-Hgc" id="LlJ-ug-Ut3"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="28" alignment="left" title="2" id="tg3-M3-I9s">
+                                    <connections>
+                                        <action selector="twoPressed" destination="AgC-eL-Hgc" id="O40-Cc-RkH"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="28" alignment="left" title="3" id="AsT-ub-kaE">
+                                    <connections>
+                                        <action selector="threePressed" destination="AgC-eL-Hgc" id="aV5-lq-XGP"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" id="f5N-Cq-ix7">
+                            <items>
+                                <button width="0.33000000000000002" height="28" alignment="left" title="←" id="NjW-q9-By8">
+                                    <connections>
+                                        <action selector="backPressed" destination="AgC-eL-Hgc" id="l4r-MH-10B"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="28" alignment="left" title="0" id="I7Y-6z-hRV">
+                                    <connections>
+                                        <action selector="zeroPressed" destination="AgC-eL-Hgc" id="9pd-Q4-wdh"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="28" alignment="left" title="%" id="Vpm-jP-s1M">
+                                    <connections>
+                                        <action selector="calculatePressed" destination="AgC-eL-Hgc" id="7o0-Uv-8YA"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="reR-kq-r7p">
+                        <items>
+                            <menuItem title="Total w/ Tip" image="totalWithTipMenu42mm" id="inF-sb-HYU">
+                                <variation key="device=watch38mm" image="totalWithTipMenu38mm"/>
+                                <variation key="device=watch42mm" image="totalWithTipMenu42mm"/>
+                                <connections>
+                                    <action selector="showTotalWithTipMenuPressed" destination="AgC-eL-Hgc" id="Kww-0C-tLc"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Total w/o Tip" image="totalMenu42mm" id="MTn-IX-fAP">
+                                <variation key="device=watch38mm" image="totalMenu38mm"/>
+                                <variation key="device=watch42mm" image="totalMenu42mm"/>
+                                <connections>
+                                    <action selector="showTotalWithoutTipMenuPressed" destination="AgC-eL-Hgc" id="cJg-7h-tmm"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Tip" image="tipMenu42mm" id="jqn-ZW-bmh">
+                                <variation key="device=watch38mm" image="tipMenu38mm"/>
+                                <variation key="device=watch42mm" image="tipMenu42mm"/>
+                                <connections>
+                                    <action selector="showTipMenuPressed" destination="AgC-eL-Hgc" id="80g-jk-7xJ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Clear" icon="decline" id="wmu-A6-Zaf">
+                                <connections>
+                                    <action selector="clearEverythingMenuPressed" destination="AgC-eL-Hgc" id="9IP-Vq-HOh"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.79607843140000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="totalLabel" destination="qIS-Xf-j6n" id="rm3-ga-0Nr"/>
+                        <segue destination="BFC-dR-ppF" kind="relationship" relationship="nextPage" id="JbZ-tQ-H9I"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="295" y="345"/>
+        </scene>
+        <!--Options Controller-->
+        <scene sceneID="O1i-4j-geg">
+            <objects>
+                <controller id="BFC-dR-ppF" customClass="OptionsController" customModule="Blue_Tip_Wrist_Calculator_Extension">
+                    <items>
+                        <picker width="1" height="0.5" alignment="center" focusStyle="sequence" indicatorMode="shownWhileFocused" id="5Cn-ZL-3KO" userLabel="Tip Percent">
+                            <connections>
+                                <action selector="tipPercentPickerChanged:" destination="BFC-dR-ppF" id="CtC-Cg-JwS"/>
+                            </connections>
+                        </picker>
+                        <picker width="1" height="0.5" alignment="center" verticalAlignment="bottom" focusStyle="sequence" indicatorMode="shownWhileFocused" id="Vtr-6W-ZuZ" userLabel="Party Size">
+                            <connections>
+                                <action selector="peoplePickerChanged:" destination="BFC-dR-ppF" id="ySy-sM-yh8"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="peoplePicker" destination="Vtr-6W-ZuZ" id="OgD-VT-uFh"/>
+                        <outlet property="tipSizePicker" destination="5Cn-ZL-3KO" id="PAd-wM-sUp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="308" y="756"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.40000000000000002" green="0.79607843140000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

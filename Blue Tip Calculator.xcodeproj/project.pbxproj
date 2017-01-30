@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6567A3221BFCF6DF0008A1E4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6567A3201BFCF6DF0008A1E4 /* Interface.storyboard */; };
+		6567A3241BFCF6DF0008A1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6567A3231BFCF6DF0008A1E4 /* Assets.xcassets */; };
+		6567A32B1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6567A32A1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6567A3321BFCF6E00008A1E4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567A3311BFCF6E00008A1E4 /* InterfaceController.swift */; };
+		6567A3381BFCF6E00008A1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6567A3371BFCF6E00008A1E4 /* Assets.xcassets */; };
+		6567A33C1BFCF6E00008A1E4 /* Blue Tip Wrist Calculator.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6567A31E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator.app */; };
+		65A5DF801BFD483F00AD3F92 /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */; };
+		65B361061B71B6BF008B8094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B361051B71B6BF008B8094 /* AppDelegate.swift */; };
+		65B361081B71B6BF008B8094 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B361071B71B6BF008B8094 /* ViewController.swift */; };
+		65B3610B1B71B6BF008B8094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B361091B71B6BF008B8094 /* Main.storyboard */; };
+		65B3610D1B71B6BF008B8094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B3610C1B71B6BF008B8094 /* Assets.xcassets */; };
+		65B361101B71B6BF008B8094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B3610E1B71B6BF008B8094 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6567A32C1BFCF6DF0008A1E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65B360FA1B71B6BF008B8094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6567A3291BFCF6DF0008A1E4;
+			remoteInfo = "Blue Tip Wrist Calculator Extension";
+		};
+		6567A33A1BFCF6E00008A1E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65B360FA1B71B6BF008B8094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6567A31D1BFCF6DF0008A1E4;
+			remoteInfo = "Blue Tip Wrist Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65453DF51BDED69300365CCD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6567A33C1BFCF6E00008A1E4 /* Blue Tip Wrist Calculator.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6567A3421BFCF6E00008A1E4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6567A32B1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		650BA1B61BFD460E0056BCE2 /* Blue Tip Wrist Calculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blue Tip Wrist Calculator-Bridging-Header.h"; sourceTree = "<group>"; };
+		6567A31E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Tip Wrist Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6567A3211BFCF6DF0008A1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6567A3231BFCF6DF0008A1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6567A3251BFCF6DF0008A1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6567A32A1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Blue Tip Wrist Calculator Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6567A3301BFCF6E00008A1E4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6567A3311BFCF6E00008A1E4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6567A3371BFCF6E00008A1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6567A3391BFCF6E00008A1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
+		65B173B81BA2274600B56A55 /* Blue Tip Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Tip Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B361051B71B6BF008B8094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65B361071B71B6BF008B8094 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65B3610A1B71B6BF008B8094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65B3610C1B71B6BF008B8094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65B3610F1B71B6BF008B8094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65B361111B71B6BF008B8094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6567A3271BFCF6DF0008A1E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B360FF1B71B6BF008B8094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6567A31F1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				6567A3201BFCF6DF0008A1E4 /* Interface.storyboard */,
+				6567A3231BFCF6DF0008A1E4 /* Assets.xcassets */,
+				6567A3251BFCF6DF0008A1E4 /* Info.plist */,
+			);
+			path = "Blue Tip Wrist Calculator";
+			sourceTree = "<group>";
+		};
+		6567A32E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6567A3311BFCF6E00008A1E4 /* InterfaceController.swift */,
+				65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */,
+				6567A3371BFCF6E00008A1E4 /* Assets.xcassets */,
+				6567A3391BFCF6E00008A1E4 /* Info.plist */,
+				6567A32F1BFCF6E00008A1E4 /* Supporting Files */,
+				650BA1B61BFD460E0056BCE2 /* Blue Tip Wrist Calculator-Bridging-Header.h */,
+			);
+			path = "Blue Tip Wrist Calculator Extension";
+			sourceTree = "<group>";
+		};
+		6567A32F1BFCF6E00008A1E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6567A3301BFCF6E00008A1E4 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65B360F91B71B6BF008B8094 = {
+			isa = PBXGroup;
+			children = (
+				65B361041B71B6BF008B8094 /* Tip Calculator */,
+				65B173B81BA2274600B56A55 /* Blue Tip Calc.app */,
+				6567A31E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator.app */,
+				6567A31F1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */,
+				6567A32A1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension.appex */,
+				6567A32E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension */,
+			);
+			sourceTree = "<group>";
+		};
+		65B361041B71B6BF008B8094 /* Tip Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				65B361051B71B6BF008B8094 /* AppDelegate.swift */,
+				65B361071B71B6BF008B8094 /* ViewController.swift */,
+				65B361091B71B6BF008B8094 /* Main.storyboard */,
+				65B3610C1B71B6BF008B8094 /* Assets.xcassets */,
+				65B3610E1B71B6BF008B8094 /* LaunchScreen.storyboard */,
+				65B361111B71B6BF008B8094 /* Info.plist */,
+			);
+			path = "Tip Calculator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6567A31D1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6567A3431BFCF6E00008A1E4 /* Build configuration list for PBXNativeTarget "Blue Tip Wrist Calculator" */;
+			buildPhases = (
+				6567A31C1BFCF6DF0008A1E4 /* Resources */,
+				6567A3421BFCF6E00008A1E4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6567A32D1BFCF6DF0008A1E4 /* PBXTargetDependency */,
+			);
+			name = "Blue Tip Wrist Calculator";
+			productName = "Blue Tip Wrist Calculator";
+			productReference = 6567A31E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6567A3291BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6567A3411BFCF6E00008A1E4 /* Build configuration list for PBXNativeTarget "Blue Tip Wrist Calculator Extension" */;
+			buildPhases = (
+				6567A3261BFCF6DF0008A1E4 /* Sources */,
+				6567A3271BFCF6DF0008A1E4 /* Frameworks */,
+				6567A3281BFCF6DF0008A1E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blue Tip Wrist Calculator Extension";
+			productName = "Blue Tip Wrist Calculator Extension";
+			productReference = 6567A32A1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		65B361011B71B6BF008B8094 /* Blue Tip Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B361141B71B6BF008B8094 /* Build configuration list for PBXNativeTarget "Blue Tip Calculator" */;
+			buildPhases = (
+				65B360FE1B71B6BF008B8094 /* Sources */,
+				65B360FF1B71B6BF008B8094 /* Frameworks */,
+				65B361001B71B6BF008B8094 /* Resources */,
+				65453DF51BDED69300365CCD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6567A33B1BFCF6E00008A1E4 /* PBXTargetDependency */,
+			);
+			name = "Blue Tip Calculator";
+			productName = "Tip Calculator";
+			productReference = 65B173B81BA2274600B56A55 /* Blue Tip Calc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65B360FA1B71B6BF008B8094 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = blaumagier;
+				TargetAttributes = {
+					6567A31D1BFCF6DF0008A1E4 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = ZJ769HHQS2;
+						LastSwiftMigration = 0800;
+					};
+					6567A3291BFCF6DF0008A1E4 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = ZJ769HHQS2;
+						LastSwiftMigration = 0800;
+					};
+					65B361011B71B6BF008B8094 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = ZJ769HHQS2;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 65B360FD1B71B6BF008B8094 /* Build configuration list for PBXProject "Blue Tip Calculator" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65B360F91B71B6BF008B8094;
+			productRefGroup = 65B360F91B71B6BF008B8094;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65B361011B71B6BF008B8094 /* Blue Tip Calculator */,
+				6567A31D1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */,
+				6567A3291BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6567A31C1BFCF6DF0008A1E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6567A3241BFCF6DF0008A1E4 /* Assets.xcassets in Resources */,
+				6567A3221BFCF6DF0008A1E4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6567A3281BFCF6DF0008A1E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6567A3381BFCF6E00008A1E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B361001B71B6BF008B8094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B361101B71B6BF008B8094 /* LaunchScreen.storyboard in Resources */,
+				65B3610D1B71B6BF008B8094 /* Assets.xcassets in Resources */,
+				65B3610B1B71B6BF008B8094 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6567A3261BFCF6DF0008A1E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A5DF801BFD483F00AD3F92 /* OptionsController.swift in Sources */,
+				6567A3321BFCF6E00008A1E4 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B360FE1B71B6BF008B8094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B361081B71B6BF008B8094 /* ViewController.swift in Sources */,
+				65B361061B71B6BF008B8094 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6567A32D1BFCF6DF0008A1E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6567A3291BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension */;
+			targetProxy = 6567A32C1BFCF6DF0008A1E4 /* PBXContainerItemProxy */;
+		};
+		6567A33B1BFCF6E00008A1E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6567A31D1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */;
+			targetProxy = 6567A33A1BFCF6E00008A1E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6567A3201BFCF6DF0008A1E4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6567A3211BFCF6DF0008A1E4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		65B361091B71B6BF008B8094 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65B3610A1B71B6BF008B8094 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65B3610E1B71B6BF008B8094 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65B3610F1B71B6BF008B8094 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6567A33D1BFCF6E00008A1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = Blue_Tip_Wrist_Calculator_Extension;
+				INFOPLIST_FILE = "Blue Tip Wrist Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Tip-Calculator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Blue Tip Wrist Calculator Extension/Blue Tip Wrist Calculator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		6567A33E1BFCF6E00008A1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = Blue_Tip_Wrist_Calculator_Extension;
+				INFOPLIST_FILE = "Blue Tip Wrist Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Tip-Calculator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Blue Tip Wrist Calculator Extension/Blue Tip Wrist Calculator-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		6567A33F1BFCF6E00008A1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Blue Tip Wrist Calculator Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Tip-Calculator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		6567A3401BFCF6E00008A1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Blue Tip Wrist Calculator Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Tip-Calculator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		65B361121B71B6BF008B8094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65B361131B71B6BF008B8094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65B361151B71B6BF008B8094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Tip Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Tip-Calculator";
+				PRODUCT_NAME = "Blue Tip Calc";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		65B361161B71B6BF008B8094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Tip Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Tip-Calculator";
+				PRODUCT_NAME = "Blue Tip Calc";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6567A3411BFCF6E00008A1E4 /* Build configuration list for PBXNativeTarget "Blue Tip Wrist Calculator Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6567A33F1BFCF6E00008A1E4 /* Debug */,
+				6567A3401BFCF6E00008A1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6567A3431BFCF6E00008A1E4 /* Build configuration list for PBXNativeTarget "Blue Tip Wrist Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6567A33D1BFCF6E00008A1E4 /* Debug */,
+				6567A33E1BFCF6E00008A1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B360FD1B71B6BF008B8094 /* Build configuration list for PBXProject "Blue Tip Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B361121B71B6BF008B8094 /* Debug */,
+				65B361131B71B6BF008B8094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B361141B71B6BF008B8094 /* Build configuration list for PBXNativeTarget "Blue Tip Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B361151B71B6BF008B8094 /* Debug */,
+				65B361161B71B6BF008B8094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65B360FA1B71B6BF008B8094 /* Project object */;
+}
