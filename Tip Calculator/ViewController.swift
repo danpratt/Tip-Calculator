@@ -13,6 +13,7 @@ var timesUserHasOpenedApp : Int?
 
 class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     
+    
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalWithTip: UILabel!
@@ -33,6 +34,7 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    
     }
     
     override func didReceiveMemoryWarning() {
