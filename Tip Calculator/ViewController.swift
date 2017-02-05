@@ -10,17 +10,18 @@ import UIKit
 import StoreKit
 
 var timesUserHasOpenedApp : Int?
+var doNotBugToRate : Bool?
 
 class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     
+    let openTimesToCheck = 2
     
+    
+    @IBOutlet weak var numberOfPeopleButton: UIButton!
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalWithTip: UILabel!
     @IBOutlet weak var tipAmountSegment: UISegmentedControl!
-    
-    // This view is hidden unless user has used app in cycles of 3 times
-    @IBOutlet weak var rateUsView: UIView!
     
     // Hidden until split bill is tapped
     
@@ -34,18 +35,22 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.numberOfPeopleButton.imageView?.contentMode = .scaleAspectFit
+        updateTimesUserHasOpenedApp()
     }
 
     /* Called when convert button is tapped */
     @IBAction func convertButtonTapped(_ sender: UIButton) {
         billTextField.resignFirstResponder()
         calculateTip()
+        
+        // Check to see if user has opened the app three times already if so, call the rate app popup
+        if timesUserHasOpenedApp! >= openTimesToCheck && !doNotBugToRate! {
+            showRateUsAlert(Alerts.RateUsTitle, message: Alerts.RateUsTitle)
+            timesUserHasOpenedApp = 0
+            setTimesUserHasOpenedApp()
+        }
+        
     }
     
     @IBAction func tipAmountSegmentValueChanged(_ sender: UISegmentedControl) {
@@ -98,9 +103,13 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
                 tipLabel.text = format.string(from: NSNumber(floatLiteral: tipToPay))!
                 totalWithTip.text = "$" +
                     format.string(from: NSNumber(floatLiteral: amountToPay))!  //"\(amountToPay)"
+                if tipLabel.isHidden {
+                    tipLabel.isHidden = false
+                    totalWithTip.isHidden = false
+                }
             }
             else {
-                tipLabel.text = "Tip is nil"
+                tipLabel.text = "Tip is invalid"
                 totalWithTip.text = "\(unwrappedTotal)"
             }
         }
@@ -148,48 +157,6 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
         default:
             numPeopleToSPlit = 1
         }
-    }
-    
-    // Load user default with how many times user has opened the app
-    
-    func updateTimesUserHasOpenedApp() {
-        timesUserHasOpenedApp = UserDefaults.standard.integer(forKey: "timesUserHasOpenedApp_")
-        if timesUserHasOpenedApp == nil {
-            timesUserHasOpenedApp = 1
-        } else {
-            timesUserHasOpenedApp = timesUserHasOpenedApp! + 1
-            setTimesUserHasOpenedApp()
-        }
-        
-        // Check to see if user has opened the app three times already if so, call the rate app popup
-        if timesUserHasOpenedApp == 3 {
-            timesUserHasOpenedApp = 0
-            setTimesUserHasOpenedApp()
-        }
-    }
-    
-    func setTimesUserHasOpenedApp() {
-        UserDefaults.standard.set(timesUserHasOpenedApp, forKey: "timesUserHasOpenedApp_")
-    }
-    
-    func goToAppInAppStore() {
-        print("opening appstore")
-        let appId = "1028599167"
-//        let url = "itms-apps://itunes.apple.com/app/id\(appId)"
-//        UIApplication.shared.openURL(NSURL(string: url)! as URL)
-        let storeViewController = SKStoreProductViewController()
-        // storeViewController.delegate = self
-        
-        let parameters = [ SKStoreProductParameterITunesItemIdentifier : appId]
-        storeViewController.loadProduct(withParameters: parameters) { [weak self] (loaded, error) -> Void in
-            if loaded {
-                // Parent class of self is UIViewController
-                self?.present(storeViewController, animated: true, completion: nil)
-            }
-        }
-    }
-    func productViewControllerDidFinish(_ viewController: SKStoreProductViewController) {
-        viewController.dismiss(animated: true, completion: nil)
-    }
+    }    
 }
 
