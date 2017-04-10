@@ -2,7 +2,7 @@
 
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](Tip-Calculator/LICENSE.txt)
-[![Build](https://img.shields.io/badge/Blue%20Tip%20Calc-V%202.2-blue.svg)(http://www.blaumagier.com/p/blue-tip-calculator.html)
+[![Build Version](https://img.shields.io/badge/Blue%20Tip%20Calc-V%202.2-blue.svg)(http://www.blaumagier.com/p/blue-tip-calculator.html)]
 
 ## Description
 
