@@ -24,6 +24,7 @@ This app was written while I was an even bigger newbie than I am now.  The entir
 - Receipt storage
 
 ## Contributing
+
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes [following Udacity commit format](http://udacity.github.io/git-styleguide/) : `git commit -am 'Add some feature'`
@@ -31,4 +32,4 @@ This app was written while I was an even bigger newbie than I am now.  The entir
 5. Submit a pull request :D
 
 ## License
-[MIT License](Tip-Calculator/LICENSE.txt)
+[MIT License](LICENSE.txt)
