@@ -78,7 +78,7 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     
     @IBAction func numPeopleSegmentChanged(_ sender: UISegmentedControl) {
         updateNumPeople()
-        print("Number of people to split = \(numPeopleToSPlit)")
+        print("Number of people to split = \(String(describing: numPeopleToSPlit))")
         calculateTip()
     }
     

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A291m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,10 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UPF-NO-FpC" userLabel="Footer Stack View">
-                                <rect key="frame" x="16" y="592.5" width="343" height="66.5"/>
+                                <rect key="frame" x="16" y="593" width="343" height="66"/>
                                 <subviews>
                                     <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="F7P-pE-c9k">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="28.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <segments>
                                             <segment title="1"/>
@@ -43,20 +43,21 @@
                                         </connections>
                                     </segmentedControl>
                                     <stackView opaque="NO" tag="8" contentMode="scaleAspectFit" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cd3-te-gAt" userLabel="Splitter Stack View">
-                                        <rect key="frame" x="0.0" y="35.5" width="343" height="31"/>
+                                        <rect key="frame" x="0.0" y="36" width="343" height="30"/>
                                         <subviews>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of People" textAlignment="center" lineBreakMode="wordWrap" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bg1-ZK-RUB">
-                                                <rect key="frame" x="0.0" y="0.0" width="305" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <button opaque="NO" contentMode="bottomRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="met-MY-4wh" userLabel="Split Bill Button">
-                                                <rect key="frame" x="313" y="0.0" width="30" height="31"/>
+                                                <rect key="frame" x="313" y="0.0" width="30" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Allows you to split the bill" label="Split Bill"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="2vd-2U-eGn"/>
-                                                    <constraint firstAttribute="height" constant="31.5" id="Jzm-oZ-7sN"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Jzm-oZ-7sN"/>
                                                 </constraints>
                                                 <state key="normal" image="people"/>
                                                 <connections>
@@ -81,12 +82,14 @@
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter total bill here" clearsOnBeginEditing="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="96g-vE-F4R">
                                                 <rect key="frame" x="33" y="0.0" width="272" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Enter the total bill amount here." label="Enter Amount"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nm-wh-GeD" userLabel="Calculate Tip Button">
                                                 <rect key="frame" x="313" y="0.0" width="30" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" label="Calculate Tip"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="8GA-H8-2PY"/>
                                                     <constraint firstAttribute="height" constant="30" id="uRl-QN-cqU"/>
