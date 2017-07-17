@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A291m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A306f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -65,6 +65,9 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="met-MY-4wh" firstAttribute="leading" secondItem="Bg1-ZK-RUB" secondAttribute="trailing" constant="8" id="9iv-cu-bEI"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -160,12 +163,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40000000000000002" green="0.79607843137254897" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ReA-Be-p8v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0kL-Bi-xym"/>
-                            <constraint firstItem="UPF-NO-FpC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Iau-Ih-YQG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ReA-Be-p8v" secondAttribute="trailing" id="K6U-cK-pWM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UPF-NO-FpC" secondAttribute="bottom" constant="8" symbolic="YES" id="k2b-52-weh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UPF-NO-FpC" secondAttribute="trailing" id="n04-eW-fGj"/>
-                            <constraint firstItem="ReA-Be-p8v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tjv-bJ-dEE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UPF-NO-FpC" secondAttribute="bottom" constant="8" id="7uQ-W6-HAa"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ReA-Be-p8v" secondAttribute="leading" id="TkH-4F-bVT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ReA-Be-p8v" secondAttribute="trailing" id="VM0-MW-lhP"/>
+                            <constraint firstItem="ReA-Be-p8v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="XHz-mg-itS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UPF-NO-FpC" secondAttribute="trailing" id="aCS-wZ-QBU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="UPF-NO-FpC" secondAttribute="leading" id="idw-dy-HvH"/>
                         </constraints>
                     </view>
                     <connections>
