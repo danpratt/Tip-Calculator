@@ -46,7 +46,7 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
         
         // Check to see if user has opened the app three times already if so, call the rate app popup
         if timesUserHasOpenedApp! >= openTimesToCheck && !doNotBugToRate! {
-            showRateUsAlert(Alerts.RateUsTitle, message: Alerts.RateUsTitle)
+            showRateUsAlert(Alerts.RateUsTitle, message: Alerts.RateUsMessage)
             timesUserHasOpenedApp = 0
             setTimesUserHasOpenedApp()
         }

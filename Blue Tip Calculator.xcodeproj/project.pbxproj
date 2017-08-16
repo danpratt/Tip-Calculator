@@ -15,6 +15,7 @@
 		6567A3321BFCF6E00008A1E4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567A3311BFCF6E00008A1E4 /* InterfaceController.swift */; };
 		6567A3381BFCF6E00008A1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6567A3371BFCF6E00008A1E4 /* Assets.xcassets */; };
 		6567A33C1BFCF6E00008A1E4 /* Blue Tip Wrist Calculator.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6567A31E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator.app */; };
+		65789B521F44A876001C89D9 /* BTCViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65789B511F44A876001C89D9 /* BTCViewControllerTests.swift */; };
 		65A5DF801BFD483F00AD3F92 /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */; };
 		65B361061B71B6BF008B8094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B361051B71B6BF008B8094 /* AppDelegate.swift */; };
 		65B361081B71B6BF008B8094 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B361071B71B6BF008B8094 /* ViewController.swift */; };
@@ -37,6 +38,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6567A31D1BFCF6DF0008A1E4;
 			remoteInfo = "Blue Tip Wrist Calculator";
+		};
+		65789B4C1F44A849001C89D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65B360FA1B71B6BF008B8094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65B361011B71B6BF008B8094;
+			remoteInfo = "Blue Tip Calculator";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -78,6 +86,9 @@
 		6567A3311BFCF6E00008A1E4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		6567A3371BFCF6E00008A1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6567A3391BFCF6E00008A1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65789B471F44A849001C89D9 /* Blue Tip CalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blue Tip CalcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65789B4B1F44A849001C89D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65789B511F44A876001C89D9 /* BTCViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCViewControllerTests.swift; sourceTree = "<group>"; };
 		65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
 		65B173B81BA2274600B56A55 /* Blue Tip Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Tip Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B361051B71B6BF008B8094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +101,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		6567A3271BFCF6DF0008A1E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65789B441F44A849001C89D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,6 +155,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		65789B481F44A849001C89D9 /* Blue Tip CalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				65789B4B1F44A849001C89D9 /* Info.plist */,
+				65789B511F44A876001C89D9 /* BTCViewControllerTests.swift */,
+			);
+			path = "Blue Tip CalcTests";
+			sourceTree = "<group>";
+		};
 		65B360F91B71B6BF008B8094 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +173,8 @@
 				6567A31F1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */,
 				6567A32A1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension.appex */,
 				6567A32E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension */,
+				65789B471F44A849001C89D9 /* Blue Tip CalcTests.xctest */,
+				65789B481F44A849001C89D9 /* Blue Tip CalcTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,6 +230,24 @@
 			productReference = 6567A32A1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		65789B461F44A849001C89D9 /* Blue Tip CalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65789B501F44A849001C89D9 /* Build configuration list for PBXNativeTarget "Blue Tip CalcTests" */;
+			buildPhases = (
+				65789B431F44A849001C89D9 /* Sources */,
+				65789B441F44A849001C89D9 /* Frameworks */,
+				65789B451F44A849001C89D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65789B4D1F44A849001C89D9 /* PBXTargetDependency */,
+			);
+			name = "Blue Tip CalcTests";
+			productName = "Blue Tip CalcTests";
+			productReference = 65789B471F44A849001C89D9 /* Blue Tip CalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		65B361011B71B6BF008B8094 /* Blue Tip Calculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65B361141B71B6BF008B8094 /* Build configuration list for PBXNativeTarget "Blue Tip Calculator" */;
@@ -226,7 +273,7 @@
 		65B360FA1B71B6BF008B8094 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = blaumagier;
 				TargetAttributes = {
@@ -239,6 +286,12 @@
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = ZJ769HHQS2;
 						LastSwiftMigration = 0800;
+					};
+					65789B461F44A849001C89D9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 65B361011B71B6BF008B8094;
 					};
 					65B361011B71B6BF008B8094 = {
 						CreatedOnToolsVersion = 7.0;
@@ -268,6 +321,7 @@
 				65B361011B71B6BF008B8094 /* Blue Tip Calculator */,
 				6567A31D1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */,
 				6567A3291BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension */,
+				65789B461F44A849001C89D9 /* Blue Tip CalcTests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,6 +344,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65789B451F44A849001C89D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65B361001B71B6BF008B8094 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +370,14 @@
 			files = (
 				65A5DF801BFD483F00AD3F92 /* OptionsController.swift in Sources */,
 				6567A3321BFCF6E00008A1E4 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65789B431F44A849001C89D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65789B521F44A876001C89D9 /* BTCViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +404,11 @@
 			isa = PBXTargetDependency;
 			target = 6567A31D1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */;
 			targetProxy = 6567A33A1BFCF6E00008A1E4 /* PBXContainerItemProxy */;
+		};
+		65789B4D1F44A849001C89D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65B361011B71B6BF008B8094 /* Blue Tip Calculator */;
+			targetProxy = 65789B4C1F44A849001C89D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -445,6 +519,46 @@
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		65789B4E1F44A849001C89D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = ZJ769HHQS2;
+				INFOPLIST_FILE = "Blue Tip CalcTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Blue-Tip-CalcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blue Tip Calc.app/Blue Tip Calc";
+			};
+			name = Debug;
+		};
+		65789B4F1F44A849001C89D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = ZJ769HHQS2;
+				INFOPLIST_FILE = "Blue Tip CalcTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Blue-Tip-CalcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blue Tip Calc.app/Blue Tip Calc";
 			};
 			name = Release;
 		};
@@ -589,6 +703,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		65789B501F44A849001C89D9 /* Build configuration list for PBXNativeTarget "Blue Tip CalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65789B4E1F44A849001C89D9 /* Debug */,
+				65789B4F1F44A849001C89D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		65B360FD1B71B6BF008B8094 /* Build configuration list for PBXProject "Blue Tip Calculator" */ = {
 			isa = XCConfigurationList;
