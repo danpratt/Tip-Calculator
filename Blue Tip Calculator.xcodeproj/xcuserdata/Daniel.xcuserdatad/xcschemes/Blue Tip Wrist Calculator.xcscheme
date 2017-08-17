@@ -66,6 +66,16 @@
                ReferencedContainer = "container:Blue Tip Calculator.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "657BB82F1F4608E80056FB65"
+               BuildableName = "Blue Tip CalcUITests.xctest"
+               BlueprintName = "Blue Tip CalcUITests"
+               ReferencedContainer = "container:Blue Tip Calculator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
