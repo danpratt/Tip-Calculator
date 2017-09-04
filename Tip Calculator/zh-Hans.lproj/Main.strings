@@ -6,13 +6,13 @@
 "4Nm-wh-GeD.accessibilityLabel" = "计算小费";
 
 /* Class = "UITextField"; accessibilityHint = "Enter the total bill amount here."; ObjectID = "96g-vE-F4R"; */
-"96g-vE-F4R.accessibilityHint" = "在此输入总费用金额";
+"96g-vE-F4R.accessibilityHint" = "输入总成本";
 
 /* Class = "UITextField"; accessibilityLabel = "Enter Amount"; ObjectID = "96g-vE-F4R"; */
-"96g-vE-F4R.accessibilityLabel" = "输入金额";
+"96g-vE-F4R.accessibilityLabel" = "输入总成本";
 
 /* Class = "UITextField"; placeholder = "enter total bill here"; ObjectID = "96g-vE-F4R"; */
-"96g-vE-F4R.placeholder" = "在这里输入总帐单";
+"96g-vE-F4R.placeholder" = "输入总成本";
 
 /* Class = "UILabel"; text = "Number of People"; ObjectID = "Bg1-ZK-RUB"; */
 "Bg1-ZK-RUB.text" = "人数";
