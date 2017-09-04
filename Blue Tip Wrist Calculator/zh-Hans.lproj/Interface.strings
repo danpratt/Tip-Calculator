@@ -1,0 +1,51 @@
+
+/* Class = "WKInterfaceButton"; title = "1"; ObjectID = "0Zl-2y-hmj"; */
+"0Zl-2y-hmj.title" = "1";
+
+/* Class = "WKInterfaceButton"; title = "3"; ObjectID = "AsT-ub-kaE"; */
+"AsT-ub-kaE.title" = "3";
+
+/* Class = "WKInterfaceButton"; title = "5"; ObjectID = "Hpm-NN-qot"; */
+"Hpm-NN-qot.title" = "5";
+
+/* Class = "WKInterfaceButton"; title = "0"; ObjectID = "I7Y-6z-hRV"; */
+"I7Y-6z-hRV.title" = "0";
+
+/* Class = "WKInterfaceMenuItem"; title = "Total w/o Tip"; ObjectID = "MTn-IX-fAP"; */
+"MTn-IX-fAP.title" = "Total w/o Tip";
+
+/* Class = "WKInterfaceButton"; title = "←"; ObjectID = "NjW-q9-By8"; */
+"NjW-q9-By8.title" = "←";
+
+/* Class = "WKInterfaceButton"; title = "6"; ObjectID = "Nub-dz-UBi"; */
+"Nub-dz-UBi.title" = "6";
+
+/* Class = "WKInterfaceButton"; title = "7"; ObjectID = "UOF-Rr-t7b"; */
+"UOF-Rr-t7b.title" = "7";
+
+/* Class = "WKInterfaceButton"; title = "%"; ObjectID = "Vpm-jP-s1M"; */
+"Vpm-jP-s1M.title" = "%";
+
+/* Class = "WKInterfaceButton"; title = "8"; ObjectID = "bAl-h3-fhG"; */
+"bAl-h3-fhG.title" = "8";
+
+/* Class = "WKInterfaceButton"; title = "4"; ObjectID = "cL5-VT-FnF"; */
+"cL5-VT-FnF.title" = "4";
+
+/* Class = "WKInterfaceButton"; title = "9"; ObjectID = "dvd-yb-qWt"; */
+"dvd-yb-qWt.title" = "9";
+
+/* Class = "WKInterfaceMenuItem"; title = "Total w/ Tip"; ObjectID = "inF-sb-HYU"; */
+"inF-sb-HYU.title" = "Total w/ Tip";
+
+/* Class = "WKInterfaceMenuItem"; title = "Tip"; ObjectID = "jqn-ZW-bmh"; */
+"jqn-ZW-bmh.title" = "Tip";
+
+/* Class = "WKInterfaceLabel"; text = "Bill total: $0.00"; ObjectID = "qIS-Xf-j6n"; */
+"qIS-Xf-j6n.text" = "Bill total: $0.00";
+
+/* Class = "WKInterfaceButton"; title = "2"; ObjectID = "tg3-M3-I9s"; */
+"tg3-M3-I9s.title" = "2";
+
+/* Class = "WKInterfaceMenuItem"; title = "Clear"; ObjectID = "wmu-A6-Zaf"; */
+"wmu-A6-Zaf.title" = "Clear";

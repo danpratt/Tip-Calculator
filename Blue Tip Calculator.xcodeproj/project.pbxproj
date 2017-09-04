@@ -100,6 +100,9 @@
 		657BB8301F4608E80056FB65 /* Blue Tip CalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blue Tip CalcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		657BB8321F4608E80056FB65 /* Blue_Tip_CalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blue_Tip_CalcUITests.swift; sourceTree = "<group>"; };
 		657BB8341F4608E80056FB65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		658F58711F5DCCC600D481D7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		658F58721F5DCCC700D481D7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		658F58731F5DCCC700D481D7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Interface.strings"; sourceTree = "<group>"; };
 		65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
 		65B173B81BA2274600B56A55 /* Blue Tip Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Tip Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B361051B71B6BF008B8094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -490,6 +493,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6567A3211BFCF6DF0008A1E4 /* Base */,
+				658F58731F5DCCC700D481D7 /* zh-Hans */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -498,6 +502,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				65B3610A1B71B6BF008B8094 /* Base */,
+				658F58711F5DCCC600D481D7 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -506,6 +511,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				65B3610F1B71B6BF008B8094 /* Base */,
+				658F58721F5DCCC700D481D7 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -674,6 +680,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -721,6 +728,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -828,6 +836,7 @@
 				657BB8381F4608E80056FB65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65B360FD1B71B6BF008B8094 /* Build configuration list for PBXProject "Blue Tip Calculator" */ = {
 			isa = XCConfigurationList;
