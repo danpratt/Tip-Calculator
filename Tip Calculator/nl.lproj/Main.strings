@@ -1,0 +1,69 @@
+
+/* Class = "UILabel"; text = "$"; ObjectID = "080-VV-BFc"; */
+"080-VV-BFc.text" = "€";
+
+/* Class = "UIButton"; accessibilityLabel = "Calculate Tip"; ObjectID = "4Nm-wh-GeD"; */
+"4Nm-wh-GeD.accessibilityLabel" = "Bereken Fooi";
+
+/* Class = "UITextField"; accessibilityHint = "Enter the total bill amount here."; ObjectID = "96g-vE-F4R"; */
+"96g-vE-F4R.accessibilityHint" = "Voer hier het totale rekeningbedrag in.";
+
+/* Class = "UITextField"; accessibilityLabel = "Enter Amount"; ObjectID = "96g-vE-F4R"; */
+"96g-vE-F4R.accessibilityLabel" = "Voer een bedrag in";
+
+/* Class = "UITextField"; placeholder = "enter total bill here"; ObjectID = "96g-vE-F4R"; */
+"96g-vE-F4R.placeholder" = "vul hier de totale rekening in";
+
+/* Class = "UILabel"; text = "Number of People"; ObjectID = "Bg1-ZK-RUB"; */
+"Bg1-ZK-RUB.text" = "Aantal mensen";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[0] = "1"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[0]" = "1";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[1] = "2"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[1]" = "2";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[2] = "3"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[2]" = "3";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[3] = "4"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[3]" = "4";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[4] = "5"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[4]" = "5";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[5] = "6"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[5]" = "6";
+
+/* Class = "UILabel"; text = "Tip"; ObjectID = "FMv-yl-i3x"; */
+"FMv-yl-i3x.text" = "Fooi";
+
+/* Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[0] = "10%"; ObjectID = "JDJ-wQ-B2H"; */
+"JDJ-wQ-B2H.segmentTitles[0]" = "10%";
+
+/* Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[1] = "15%"; ObjectID = "JDJ-wQ-B2H"; */
+"JDJ-wQ-B2H.segmentTitles[1]" = "15%";
+
+/* Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[2] = "18%"; ObjectID = "JDJ-wQ-B2H"; */
+"JDJ-wQ-B2H.segmentTitles[2]" = "18%";
+
+/* Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[3] = "20%"; ObjectID = "JDJ-wQ-B2H"; */
+"JDJ-wQ-B2H.segmentTitles[3]" = "20%";
+
+/* Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[4] = "25%"; ObjectID = "JDJ-wQ-B2H"; */
+"JDJ-wQ-B2H.segmentTitles[4]" = "25%";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "JYw-wZ-Zbh"; */
+"JYw-wZ-Zbh.text" = "Totaal";
+
+/* Class = "UILabel"; text = "Total With Tip"; ObjectID = "arf-tt-4NZ"; */
+"arf-tt-4NZ.text" = "Totaal met fooi";
+
+/* Class = "UIButton"; accessibilityHint = "Allows you to split the bill"; ObjectID = "met-MY-4wh"; */
+"met-MY-4wh.accessibilityHint" = "Hiermee kunt u de rekening splitsen";
+
+/* Class = "UIButton"; accessibilityLabel = "Split Bill"; ObjectID = "met-MY-4wh"; */
+"met-MY-4wh.accessibilityLabel" = "Aandeel factuur";
+
+/* Class = "UILabel"; text = "Tip Label"; ObjectID = "uFk-gG-TrZ"; */
+"uFk-gG-TrZ.text" = "Fooi Naamplankje";

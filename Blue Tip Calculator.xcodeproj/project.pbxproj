@@ -103,6 +103,9 @@
 		658F58711F5DCCC600D481D7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		658F58721F5DCCC700D481D7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		658F58731F5DCCC700D481D7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Interface.strings"; sourceTree = "<group>"; };
+		658F58741F5DD49D00D481D7 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		658F58751F5DD49D00D481D7 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		658F58761F5DD49D00D481D7 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Interface.strings; sourceTree = "<group>"; };
 		65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
 		65B173B81BA2274600B56A55 /* Blue Tip Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Tip Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B361051B71B6BF008B8094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -494,6 +497,7 @@
 			children = (
 				6567A3211BFCF6DF0008A1E4 /* Base */,
 				658F58731F5DCCC700D481D7 /* zh-Hans */,
+				658F58761F5DD49D00D481D7 /* nl */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -503,6 +507,7 @@
 			children = (
 				65B3610A1B71B6BF008B8094 /* Base */,
 				658F58711F5DCCC600D481D7 /* zh-Hans */,
+				658F58741F5DD49D00D481D7 /* nl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -512,6 +517,7 @@
 			children = (
 				65B3610F1B71B6BF008B8094 /* Base */,
 				658F58721F5DCCC700D481D7 /* zh-Hans */,
+				658F58751F5DD49D00D481D7 /* nl */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
