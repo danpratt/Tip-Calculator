@@ -13,7 +13,7 @@ import StoreKit
 var timesUserHasOpenedApp : Int?
 var doNotBugToRate : Bool?
 
-class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
+class ViewController: UIViewController, SKStoreProductViewControllerDelegate, UITextFieldDelegate {
     
     // Properties for offering store information
     let openTimesToCheck = 2
@@ -38,7 +38,7 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         self.numberOfPeopleButton.imageView?.contentMode = .scaleAspectFit
         updateTimesUserHasOpenedApp()
-        print("The currency here is \(String(describing: Locale.current.currencySymbol)))")
+        billTextField.delegate = self
     }
 
     /* Called when convert button is tapped */
@@ -162,6 +162,53 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
         }
     }
     
+    // MARK: - Delegate Functions
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let characterset = CharacterSet(charactersIn: "0123456789.,")
+        if string.rangeOfCharacter(from: characterset.inverted) != nil {
+            print("string contains special characters")
+        }
+        
+        // Check if textfield already contains a decimal
+        if (textField.text?.contains("."))! || (textField.text?.contains(","))! {
+            // Found a decimal, check if the current character(s) have decimals in them
+            if string.contains(".") || string.contains(",") {
+                return false
+            } else {
+                // get the index near the end and check to see if it is a decimal
+                // if it is, we can have one more character
+                // if it isn't, we have to block entry
+
+                let index = textField.text?.index((textField.text?.endIndex)!, offsetBy: -1)
+                let checkChar = textField.text?.characters[index!]
+                
+                // Check the last entered character
+                if checkChar == "." || checkChar == "," {
+                    return true
+                }
+                
+                if (textField.text?.characters.count)! > 2 {
+                    let secondIndex = textField.text?.index((textField.text?.endIndex)!, offsetBy: -2)
+                    let checkSecondChar = textField.text?.characters[secondIndex!]
+                    if checkSecondChar == "." || checkSecondChar == "," {
+                        return true
+                    } else {
+                        // we already have two decimals so stop
+                        return false
+                    }
+                } else {
+                    // we don't have enough characters to have more than two after the decimal so keep going
+                    return true
+                }
+            }
+        }
+        // everything is fine, keep going
+        return true
+    }
+    
+    // MARK: - Private Helper Functions
+    
     private func setupNumberFormatter() -> NumberFormatter {
         let numberFormatter = NumberFormatter()
         numberFormatter.maximumFractionDigits = 2
@@ -172,6 +219,7 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
         
         return numberFormatter
     }
+
 
 }
 
