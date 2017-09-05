@@ -6,6 +6,7 @@
 //  Copyright © 2015 blaumagier. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import StoreKit
 
@@ -14,7 +15,11 @@ var doNotBugToRate : Bool?
 
 class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     
+    // Properties for offering store information
     let openTimesToCheck = 2
+    
+    // Localization properties
+    var currencySymbol: String!
     
     
     @IBOutlet weak var numberOfPeopleButton: UIButton!
@@ -88,9 +93,9 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     func calculateTip() {
         let bill = Double(billTextField.text!)  // get value from textfield
         
-        let format = NumberFormatter()
-        format.maximumFractionDigits = 2
-        format.minimumFractionDigits = 2
+        let numberFormatter = NumberFormatter()
+        numberFormatter.maximumFractionDigits = 2
+        numberFormatter.minimumFractionDigits = 2
         
         if let unwrappedTotal = bill {
             if let tipValueToUse = tipValue  {
@@ -100,9 +105,11 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
                     tipToPay /= Double(numPeopleToSPlit!)
                     amountToPay /= Double(numPeopleToSPlit!)
                 }
-                tipLabel.text = format.string(from: NSNumber(floatLiteral: tipToPay))!
-                totalWithTip.text = "$" +
-                    format.string(from: NSNumber(floatLiteral: amountToPay))!  //"\(amountToPay)"
+                tipLabel.text = numberFormatter.string(from: NSNumber(floatLiteral: tipToPay))!
+                // Localization
+                
+                totalWithTip.text = currencySymbol +
+                    numberFormatter.string(from: NSNumber(floatLiteral: amountToPay))!  //"\(amountToPay)"
                 if tipLabel.isHidden {
                     tipLabel.isHidden = false
                     totalWithTip.isHidden = false
@@ -157,6 +164,11 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
         default:
             numPeopleToSPlit = 1
         }
-    }    
+    }
+    
+    private func getSymbolForCurrencyCode(code: String) -> String? {
+        let locale = NSLocale(localeIdentifier: code)
+        return locale.displayName(forKey: NSLocale.Key.currencySymbol, value: code)
+    }
 }
 

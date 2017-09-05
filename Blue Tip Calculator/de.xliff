@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Blue Tip CalcTests/Info.plist" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Blue Tip CalcUITests/Info.plist" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Blue Tip Wrist Calculator Extension/Info.plist" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>Blue Tip Wrist Calculator Extension</source>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>2.2</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Blue Tip Wrist Calculator/Base.lproj/Interface.storyboard" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="0Zl-2y-hmj.title">
+        <source>1</source>
+        <target>1</target>
+        <note>Class = "WKInterfaceButton"; title = "1"; ObjectID = "0Zl-2y-hmj";</note>
+      </trans-unit>
+      <trans-unit id="AsT-ub-kaE.title">
+        <source>3</source>
+        <target>3</target>
+        <note>Class = "WKInterfaceButton"; title = "3"; ObjectID = "AsT-ub-kaE";</note>
+      </trans-unit>
+      <trans-unit id="Hpm-NN-qot.title">
+        <source>5</source>
+        <target>5</target>
+        <note>Class = "WKInterfaceButton"; title = "5"; ObjectID = "Hpm-NN-qot";</note>
+      </trans-unit>
+      <trans-unit id="I7Y-6z-hRV.title">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "WKInterfaceButton"; title = "0"; ObjectID = "I7Y-6z-hRV";</note>
+      </trans-unit>
+      <trans-unit id="MTn-IX-fAP.title">
+        <source>Total w/o Tip</source>
+        <target>Total w/o Tip</target>
+        <note>Class = "WKInterfaceMenuItem"; title = "Total w/o Tip"; ObjectID = "MTn-IX-fAP";</note>
+      </trans-unit>
+      <trans-unit id="NjW-q9-By8.title">
+        <source>←</source>
+        <target>←</target>
+        <note>Class = "WKInterfaceButton"; title = "←"; ObjectID = "NjW-q9-By8";</note>
+      </trans-unit>
+      <trans-unit id="Nub-dz-UBi.title">
+        <source>6</source>
+        <target>6</target>
+        <note>Class = "WKInterfaceButton"; title = "6"; ObjectID = "Nub-dz-UBi";</note>
+      </trans-unit>
+      <trans-unit id="UOF-Rr-t7b.title">
+        <source>7</source>
+        <target>7</target>
+        <note>Class = "WKInterfaceButton"; title = "7"; ObjectID = "UOF-Rr-t7b";</note>
+      </trans-unit>
+      <trans-unit id="Vpm-jP-s1M.title">
+        <source>%</source>
+        <target>%</target>
+        <note>Class = "WKInterfaceButton"; title = "%"; ObjectID = "Vpm-jP-s1M";</note>
+      </trans-unit>
+      <trans-unit id="bAl-h3-fhG.title">
+        <source>8</source>
+        <target>8</target>
+        <note>Class = "WKInterfaceButton"; title = "8"; ObjectID = "bAl-h3-fhG";</note>
+      </trans-unit>
+      <trans-unit id="cL5-VT-FnF.title">
+        <source>4</source>
+        <target>4</target>
+        <note>Class = "WKInterfaceButton"; title = "4"; ObjectID = "cL5-VT-FnF";</note>
+      </trans-unit>
+      <trans-unit id="dvd-yb-qWt.title">
+        <source>9</source>
+        <target>9</target>
+        <note>Class = "WKInterfaceButton"; title = "9"; ObjectID = "dvd-yb-qWt";</note>
+      </trans-unit>
+      <trans-unit id="inF-sb-HYU.title">
+        <source>Total w/ Tip</source>
+        <target>Total w/ Tip</target>
+        <note>Class = "WKInterfaceMenuItem"; title = "Total w/ Tip"; ObjectID = "inF-sb-HYU";</note>
+      </trans-unit>
+      <trans-unit id="jqn-ZW-bmh.title">
+        <source>Tip</source>
+        <target>Tip</target>
+        <note>Class = "WKInterfaceMenuItem"; title = "Tip"; ObjectID = "jqn-ZW-bmh";</note>
+      </trans-unit>
+      <trans-unit id="qIS-Xf-j6n.text">
+        <source>Bill total: $0.00</source>
+        <target>Bill total: $0.00</target>
+        <note>Class = "WKInterfaceLabel"; text = "Bill total: $0.00"; ObjectID = "qIS-Xf-j6n";</note>
+      </trans-unit>
+      <trans-unit id="tg3-M3-I9s.title">
+        <source>2</source>
+        <target>2</target>
+        <note>Class = "WKInterfaceButton"; title = "2"; ObjectID = "tg3-M3-I9s";</note>
+      </trans-unit>
+      <trans-unit id="wmu-A6-Zaf.title">
+        <source>Clear</source>
+        <target>Clear</target>
+        <note>Class = "WKInterfaceMenuItem"; title = "Clear"; ObjectID = "wmu-A6-Zaf";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Blue Tip Wrist Calculator/Info.plist" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>Blue Tip Calc</source>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>2.2</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Tip Calculator/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="RNS-lo-Dqr.text">
+        <source>$</source>
+        <target>$</target>
+        <note>Class = "UILabel"; text = "$"; ObjectID = "RNS-lo-Dqr";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Tip Calculator/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="4Nm-wh-GeD.accessibilityLabel">
+        <source>Calculate Tip</source>
+        <target>Calculate Tip</target>
+        <note>Class = "UIButton"; accessibilityLabel = "Calculate Tip"; ObjectID = "4Nm-wh-GeD";</note>
+      </trans-unit>
+      <trans-unit id="080-VV-BFc.text">
+        <source>$</source>
+        <target>€</target>
+        <note>Class = "UILabel"; text = "$"; ObjectID = "080-VV-BFc";</note>
+      </trans-unit>
+      <trans-unit id="96g-vE-F4R.accessibilityHint">
+        <source>Enter the total bill amount here.</source>
+        <target>Enter the total bill amount here.</target>
+        <note>Class = "UITextField"; accessibilityHint = "Enter the total bill amount here."; ObjectID = "96g-vE-F4R";</note>
+      </trans-unit>
+      <trans-unit id="96g-vE-F4R.accessibilityLabel">
+        <source>Enter Amount</source>
+        <target>Enter Amount</target>
+        <note>Class = "UITextField"; accessibilityLabel = "Enter Amount"; ObjectID = "96g-vE-F4R";</note>
+      </trans-unit>
+      <trans-unit id="96g-vE-F4R.placeholder">
+        <source>enter total bill here</source>
+        <target>enter total bill here</target>
+        <note>Class = "UITextField"; placeholder = "enter total bill here"; ObjectID = "96g-vE-F4R";</note>
+      </trans-unit>
+      <trans-unit id="Bg1-ZK-RUB.text">
+        <source>Number of People</source>
+        <target>Number of People</target>
+        <note>Class = "UILabel"; text = "Number of People"; ObjectID = "Bg1-ZK-RUB";</note>
+      </trans-unit>
+      <trans-unit id="F7P-pE-c9k.segmentTitles[0]">
+        <source>1</source>
+        <target>1</target>
+        <note>Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[0] = "1"; ObjectID = "F7P-pE-c9k";</note>
+      </trans-unit>
+      <trans-unit id="F7P-pE-c9k.segmentTitles[1]">
+        <source>2</source>
+        <target>2</target>
+        <note>Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[1] = "2"; ObjectID = "F7P-pE-c9k";</note>
+      </trans-unit>
+      <trans-unit id="F7P-pE-c9k.segmentTitles[2]">
+        <source>3</source>
+        <target>3</target>
+        <note>Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[2] = "3"; ObjectID = "F7P-pE-c9k";</note>
+      </trans-unit>
+      <trans-unit id="F7P-pE-c9k.segmentTitles[3]">
+        <source>4</source>
+        <target>4</target>
+        <note>Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[3] = "4"; ObjectID = "F7P-pE-c9k";</note>
+      </trans-unit>
+      <trans-unit id="F7P-pE-c9k.segmentTitles[4]">
+        <source>5</source>
+        <target>5</target>
+        <note>Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[4] = "5"; ObjectID = "F7P-pE-c9k";</note>
+      </trans-unit>
+      <trans-unit id="F7P-pE-c9k.segmentTitles[5]">
+        <source>6</source>
+        <target>6</target>
+        <note>Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[5] = "6"; ObjectID = "F7P-pE-c9k";</note>
+      </trans-unit>
+      <trans-unit id="FMv-yl-i3x.text">
+        <source>Tip</source>
+        <target>Tip</target>
+        <note>Class = "UILabel"; text = "Tip"; ObjectID = "FMv-yl-i3x";</note>
+      </trans-unit>
+      <trans-unit id="JDJ-wQ-B2H.segmentTitles[0]">
+        <source>10%</source>
+        <target>10%</target>
+        <note>Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[0] = "10%"; ObjectID = "JDJ-wQ-B2H";</note>
+      </trans-unit>
+      <trans-unit id="JDJ-wQ-B2H.segmentTitles[1]">
+        <source>15%</source>
+        <target>15%</target>
+        <note>Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[1] = "15%"; ObjectID = "JDJ-wQ-B2H";</note>
+      </trans-unit>
+      <trans-unit id="JDJ-wQ-B2H.segmentTitles[2]">
+        <source>18%</source>
+        <target>18%</target>
+        <note>Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[2] = "18%"; ObjectID = "JDJ-wQ-B2H";</note>
+      </trans-unit>
+      <trans-unit id="JDJ-wQ-B2H.segmentTitles[3]">
+        <source>20%</source>
+        <target>20%</target>
+        <note>Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[3] = "20%"; ObjectID = "JDJ-wQ-B2H";</note>
+      </trans-unit>
+      <trans-unit id="JDJ-wQ-B2H.segmentTitles[4]">
+        <source>25%</source>
+        <target>25%</target>
+        <note>Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[4] = "25%"; ObjectID = "JDJ-wQ-B2H";</note>
+      </trans-unit>
+      <trans-unit id="JYw-wZ-Zbh.text">
+        <source>Total</source>
+        <target>Total</target>
+        <note>Class = "UILabel"; text = "Total"; ObjectID = "JYw-wZ-Zbh";</note>
+      </trans-unit>
+      <trans-unit id="arf-tt-4NZ.text">
+        <source>Total With Tip</source>
+        <target>Total With Tip</target>
+        <note>Class = "UILabel"; text = "Total With Tip"; ObjectID = "arf-tt-4NZ";</note>
+      </trans-unit>
+      <trans-unit id="met-MY-4wh.accessibilityHint">
+        <source>Allows you to split the bill</source>
+        <target>Allows you to split the bill</target>
+        <note>Class = "UIButton"; accessibilityHint = "Allows you to split the bill"; ObjectID = "met-MY-4wh";</note>
+      </trans-unit>
+      <trans-unit id="met-MY-4wh.accessibilityLabel">
+        <source>Split Bill</source>
+        <target>Split Bill</target>
+        <note>Class = "UIButton"; accessibilityLabel = "Split Bill"; ObjectID = "met-MY-4wh";</note>
+      </trans-unit>
+      <trans-unit id="uFk-gG-TrZ.text">
+        <source>Tip Label</source>
+        <target>Tip Label</target>
+        <note>Class = "UILabel"; text = "Tip Label"; ObjectID = "uFk-gG-TrZ";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Tip Calculator/Info.plist" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>Tip Calculator</source>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>2.3</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

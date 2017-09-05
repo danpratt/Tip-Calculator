@@ -1,0 +1,69 @@
+
+/* Class = "UILabel"; text = "$"; ObjectID = "080-VV-BFc"; */
+"080-VV-BFc.text" = "€";
+
+/* Class = "UIButton"; accessibilityLabel = "Calculate Tip"; ObjectID = "4Nm-wh-GeD"; */
+"4Nm-wh-GeD.accessibilityLabel" = "Calculate Tip";
+
+/* Class = "UITextField"; accessibilityHint = "Enter the total bill amount here."; ObjectID = "96g-vE-F4R"; */
+"96g-vE-F4R.accessibilityHint" = "Enter the total bill amount here.";
+
+/* Class = "UITextField"; accessibilityLabel = "Enter Amount"; ObjectID = "96g-vE-F4R"; */
+"96g-vE-F4R.accessibilityLabel" = "Enter Amount";
+
+/* Class = "UITextField"; placeholder = "enter total bill here"; ObjectID = "96g-vE-F4R"; */
+"96g-vE-F4R.placeholder" = "enter total bill here";
+
+/* Class = "UILabel"; text = "Number of People"; ObjectID = "Bg1-ZK-RUB"; */
+"Bg1-ZK-RUB.text" = "Number of People";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[0] = "1"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[0]" = "1";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[1] = "2"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[1]" = "2";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[2] = "3"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[2]" = "3";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[3] = "4"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[3]" = "4";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[4] = "5"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[4]" = "5";
+
+/* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[5] = "6"; ObjectID = "F7P-pE-c9k"; */
+"F7P-pE-c9k.segmentTitles[5]" = "6";
+
+/* Class = "UILabel"; text = "Tip"; ObjectID = "FMv-yl-i3x"; */
+"FMv-yl-i3x.text" = "Tip";
+
+/* Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[0] = "10%"; ObjectID = "JDJ-wQ-B2H"; */
+"JDJ-wQ-B2H.segmentTitles[0]" = "10%";
+
+/* Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[1] = "15%"; ObjectID = "JDJ-wQ-B2H"; */
+"JDJ-wQ-B2H.segmentTitles[1]" = "15%";
+
+/* Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[2] = "18%"; ObjectID = "JDJ-wQ-B2H"; */
+"JDJ-wQ-B2H.segmentTitles[2]" = "18%";
+
+/* Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[3] = "20%"; ObjectID = "JDJ-wQ-B2H"; */
+"JDJ-wQ-B2H.segmentTitles[3]" = "20%";
+
+/* Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[4] = "25%"; ObjectID = "JDJ-wQ-B2H"; */
+"JDJ-wQ-B2H.segmentTitles[4]" = "25%";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "JYw-wZ-Zbh"; */
+"JYw-wZ-Zbh.text" = "Total";
+
+/* Class = "UILabel"; text = "Total With Tip"; ObjectID = "arf-tt-4NZ"; */
+"arf-tt-4NZ.text" = "Total With Tip";
+
+/* Class = "UIButton"; accessibilityHint = "Allows you to split the bill"; ObjectID = "met-MY-4wh"; */
+"met-MY-4wh.accessibilityHint" = "Allows you to split the bill";
+
+/* Class = "UIButton"; accessibilityLabel = "Split Bill"; ObjectID = "met-MY-4wh"; */
+"met-MY-4wh.accessibilityLabel" = "Split Bill";
+
+/* Class = "UILabel"; text = "Tip Label"; ObjectID = "uFk-gG-TrZ"; */
+"uFk-gG-TrZ.text" = "Tip Label";
