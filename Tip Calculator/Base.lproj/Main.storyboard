@@ -88,7 +88,7 @@
                                                 <accessibility key="accessibilityConfiguration" hint="Enter the total bill amount here." label="Enter Amount"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nm-wh-GeD" userLabel="Calculate Tip Button">
                                                 <rect key="frame" x="313" y="0.0" width="30" height="30"/>

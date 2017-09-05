@@ -28,8 +28,8 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     
     @IBOutlet weak var numPeopleLabel: UILabel!
     
-    var tipValue: Double? = 0.15
-    var numPeopleToSPlit: Int?
+    var tipValue: Double = 0.15
+    var numPeopleToSplit: Int = 1
     var isSplittingBill: Bool = false
     @IBOutlet weak var numPeopleSegment: UISegmentedControl!
     
@@ -80,7 +80,7 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     
     @IBAction func numPeopleSegmentChanged(_ sender: UISegmentedControl) {
         updateNumPeople()
-        print("Number of people to split = \(String(describing: numPeopleToSPlit))")
+        print("Number of people to split = \(String(describing: numPeopleToSplit))")
         calculateTip()
     }
     
@@ -88,42 +88,36 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     /* Calculate the tip here */
     
     func calculateTip() {
-        let bill = Double(billTextField.text!)  // get value from textfield
+        guard let billText = billTextField.text else {
+            print("Error getting text")
+            return
+        } // get value from textfield
         
-        print("Bill is \(String(describing: bill))")
+        let numberFormatter = setupNumberFormatter()
         
-        let numberFormatter = NumberFormatter()
-        numberFormatter.maximumFractionDigits = 2
-        numberFormatter.minimumFractionDigits = 2
-        //numberFormatter.locale = Locale(identifier: Locale.current.identifier)
-        numberFormatter.numberStyle = .currency
+        let totalOfBillBeoreTip : Double = Double(((numberFormatter.number(from: billText)))!)
         
-        if let unwrappedTotal = bill {
-            if let tipValueToUse = tipValue  {
-                var tipToPay = tipValueToUse * unwrappedTotal
-                var amountToPay = unwrappedTotal + tipToPay
-                if numPeopleSegment.isHidden == false {
-                    tipToPay /= Double(numPeopleToSPlit!)
-                    amountToPay /= Double(numPeopleToSPlit!)
-                }
-                tipLabel.text = numberFormatter.string(from: bill! as NSNumber)
-                
-                // Localization
-                
-                
-                totalWithTip.text = numberFormatter.string(from: amountToPay as NSNumber)
-                if tipLabel.isHidden {
-                    tipLabel.isHidden = false
-                    totalWithTip.isHidden = false
-                }
-            }
-            else {
-                tipLabel.text = "Tip is invalid"
-                totalWithTip.text = "\(unwrappedTotal)"
-            }
+        print("Bill is \(String(describing: totalOfBillBeoreTip))")
+        
+        // calculate the tip amount and the total amount to pay
+        var tipToPay : Double = tipValue * totalOfBillBeoreTip // cost of tip
+        var totalAmountToPay : Double = tipToPay + totalOfBillBeoreTip
+        
+        // split these numbers up if the bill is being split
+        if !numPeopleSegment.isHidden {
+            tipToPay /= Double(numPeopleToSplit)
+            totalAmountToPay /= Double(numPeopleToSplit)
         }
-        else {
-            print("Optional was nil!")
+        
+        // Setup labels
+        tipLabel.text = numberFormatter.string(from: tipToPay as NSNumber)
+        totalWithTip.text = numberFormatter.string(from: totalAmountToPay as NSNumber)
+        
+        // Display labels if they are hidden
+        // Only need to check one of the labels because if one is hidden, they are both hidden
+        if tipLabel.isHidden {
+            tipLabel.isHidden = false
+            totalWithTip.isHidden = false
         }
     }
     
@@ -139,7 +133,7 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
             numPeopleLabel.isHidden = true
             numPeopleSegment.isEnabled = false
             numPeopleSegment.isHidden = true
-            numPeopleToSPlit = 1
+            numPeopleToSplit = 1
             isSplittingBill = false
             calculateTip()
         }
@@ -152,20 +146,31 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
         
         switch currentSegment {
         case 0:
-            numPeopleToSPlit = 1
+            numPeopleToSplit = 1
         case 1:
-            numPeopleToSPlit = 2
+            numPeopleToSplit = 2
         case 2:
-            numPeopleToSPlit = 3
+            numPeopleToSplit = 3
         case 3:
-            numPeopleToSPlit = 4
+            numPeopleToSplit = 4
         case 4:
-            numPeopleToSPlit = 5
+            numPeopleToSplit = 5
         case 5:
-            numPeopleToSPlit = 6
+            numPeopleToSplit = 6
         default:
-            numPeopleToSPlit = 1
+            numPeopleToSplit = 1
         }
+    }
+    
+    private func setupNumberFormatter() -> NumberFormatter {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.maximumFractionDigits = 2
+        numberFormatter.minimumFractionDigits = 2
+        //numberFormatter.locale = Locale(identifier: Locale.current.identifier)
+        numberFormatter.numberStyle = .currency
+        numberFormatter.isLenient = true
+        
+        return numberFormatter
     }
 
 }
