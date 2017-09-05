@@ -167,7 +167,8 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate, UI
         
         let characterset = CharacterSet(charactersIn: "0123456789.,")
         if string.rangeOfCharacter(from: characterset.inverted) != nil {
-            print("string contains special characters")
+            // User entered something other than a number or decimal...
+            return false
         }
         
         // Check if textfield already contains a decimal
