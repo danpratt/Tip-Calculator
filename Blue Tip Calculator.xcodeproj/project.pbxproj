@@ -357,7 +357,7 @@
 					65B361011B71B6BF008B8094 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = ZJ769HHQS2;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0830;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 0;

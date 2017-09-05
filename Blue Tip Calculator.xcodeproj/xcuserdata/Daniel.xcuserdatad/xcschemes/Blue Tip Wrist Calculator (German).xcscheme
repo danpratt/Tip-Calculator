@@ -100,6 +100,7 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       language = "de"
+      region = "DE"
       notificationPayloadFile = "Blue Tip Wrist Calculator Extension/PushNotificationPayload.apns">
       <RemoteRunnable
          runnableDebuggingMode = "2"

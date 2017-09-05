@@ -18,10 +18,6 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     // Properties for offering store information
     let openTimesToCheck = 2
     
-    // Localization properties
-    var currencySymbol: String!
-    
-    
     @IBOutlet weak var numberOfPeopleButton: UIButton!
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
@@ -42,6 +38,7 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         self.numberOfPeopleButton.imageView?.contentMode = .scaleAspectFit
         updateTimesUserHasOpenedApp()
+        print("The currency here is \(String(describing: Locale.current.currencySymbol)))")
     }
 
     /* Called when convert button is tapped */
@@ -93,9 +90,13 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
     func calculateTip() {
         let bill = Double(billTextField.text!)  // get value from textfield
         
+        print("Bill is \(String(describing: bill))")
+        
         let numberFormatter = NumberFormatter()
         numberFormatter.maximumFractionDigits = 2
         numberFormatter.minimumFractionDigits = 2
+        //numberFormatter.locale = Locale(identifier: Locale.current.identifier)
+        numberFormatter.numberStyle = .currency
         
         if let unwrappedTotal = bill {
             if let tipValueToUse = tipValue  {
@@ -105,11 +106,12 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
                     tipToPay /= Double(numPeopleToSPlit!)
                     amountToPay /= Double(numPeopleToSPlit!)
                 }
-                tipLabel.text = numberFormatter.string(from: NSNumber(floatLiteral: tipToPay))!
+                tipLabel.text = numberFormatter.string(from: bill! as NSNumber)
+                
                 // Localization
                 
-                totalWithTip.text = currencySymbol +
-                    numberFormatter.string(from: NSNumber(floatLiteral: amountToPay))!  //"\(amountToPay)"
+                
+                totalWithTip.text = numberFormatter.string(from: amountToPay as NSNumber)
                 if tipLabel.isHidden {
                     tipLabel.isHidden = false
                     totalWithTip.isHidden = false
@@ -165,10 +167,6 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate {
             numPeopleToSPlit = 1
         }
     }
-    
-    private func getSymbolForCurrencyCode(code: String) -> String? {
-        let locale = NSLocale(localeIdentifier: code)
-        return locale.displayName(forKey: NSLocale.Key.currencySymbol, value: code)
-    }
+
 }
 
