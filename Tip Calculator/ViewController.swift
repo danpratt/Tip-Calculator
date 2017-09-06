@@ -95,6 +95,10 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate, UI
         
         let numberFormatter = setupNumberFormatter()
         
+        if billText == "" {
+            return
+        }
+        
         let totalOfBillBeoreTip : Double = Double(((numberFormatter.number(from: billText)))!)
         
         print("Bill is \(String(describing: totalOfBillBeoreTip))")
