@@ -165,7 +165,8 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate, UI
     // MARK: - Delegate Functions
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        let characterset = CharacterSet(charactersIn: "0123456789.,")
+        let characterset = CharacterSet(charactersIn: "0123456789\(String(describing: Locale.current.decimalSeparator))")
+        
         if string.rangeOfCharacter(from: characterset.inverted) != nil {
             // User entered something other than a number or decimal...
             return false
