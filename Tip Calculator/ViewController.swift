@@ -169,10 +169,20 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate, UI
     // MARK: - Delegate Functions
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        let characterset = CharacterSet(charactersIn: "0123456789\(String(describing: Locale.current.decimalSeparator))")
+        let  char = string.cString(using: String.Encoding.utf8)!
+        let isBackSpace = strcmp(char, "\\b")
+        
+        if (isBackSpace == -92) {
+            print("Backspace was pressed")
+            return true
+        }
+        
+        // Load up the character set of acceptable keys to be pressed, this is important for iPad users
+        let characterset = CharacterSet(charactersIn: "0123456789" + (Locale.current.decimalSeparator)!)
         
         if string.rangeOfCharacter(from: characterset.inverted) != nil {
             // User entered something other than a number or decimal...
+            print("The string contained \(String(describing:string))")
             return false
         }
         
@@ -201,6 +211,7 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate, UI
                         return true
                     } else {
                         // we already have two decimals so stop
+                        print("String: \(string) is rejected from second char")
                         return false
                     }
                 } else {
@@ -210,6 +221,12 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate, UI
             }
         }
         // everything is fine, keep going
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        calculateTip()
         return true
     }
     
