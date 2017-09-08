@@ -18,7 +18,7 @@ class InterfaceController: WKInterfaceController {
     var lastNumber = [0.00]
     
     // formatting
-    let format = NumberFormatter()
+    var format: NumberFormatter!
     
     @IBOutlet var totalLabel: WKInterfaceLabel!
     override func awake(withContext context: Any?) {
@@ -31,11 +31,7 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-//        format.maximumFractionDigits = 2
-//        format.minimumFractionDigits = 2
-//        format.minimumIntegerDigits = 1
-        format.numberStyle = NumberFormatter.Style.currency
-        
+        format = setupNumberFormatter()
     }
 
     override func didDeactivate() {
@@ -153,8 +149,6 @@ class InterfaceController: WKInterfaceController {
     
     func updateLabel() {
         totalLabel.setText("Bill amount: " + format.string(from: NSNumber(floatLiteral: total))!)
-
-        
     }
     
     func calculateTip() {
@@ -195,6 +189,19 @@ class InterfaceController: WKInterfaceController {
         totalWithTip = 0.0
         lastNumber = [0.00]
         updateLabel()
+    }
+    
+    // MARK: - Private Helper Functions
+    
+    private func setupNumberFormatter() -> NumberFormatter {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.maximumFractionDigits = 2
+        numberFormatter.minimumFractionDigits = 2
+        numberFormatter.locale = Locale(identifier: Locale.current.identifier)
+        numberFormatter.numberStyle = .currency
+        numberFormatter.isLenient = true
+        
+        return numberFormatter
     }
     
     
