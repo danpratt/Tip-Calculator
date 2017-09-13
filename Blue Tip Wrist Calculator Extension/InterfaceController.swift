@@ -20,6 +20,49 @@ class InterfaceController: WKInterfaceController {
     // formatting
     var format: NumberFormatter!
     
+    // Localization variables
+    var billAmountString = { () -> String in
+        let localeID = Locale.current.identifier
+        switch localeID {
+        case "nl_NL":
+            return "Rekening hoeveelheid: "
+        case "zh_Hans":
+            return "帐单金额："
+        case "de":
+            return "Rechnungsbetrag: "
+        default:
+            return "Bill Amount: "
+        }
+    }
+    
+    var tipString = { () -> String in
+        let localeID = Locale.current.identifier
+        switch localeID {
+        case "nl_NL":
+            return "Fooi: "
+        case "zh_Hans":
+            return "赏钱："
+        case "de":
+            return "Trinkgeld: "
+        default:
+            return "Tip: "
+        }
+    }
+    
+    var totalPlusTipString = { () -> String in
+        let localeID = Locale.current.identifier
+        switch localeID {
+        case "nl_NL":
+            return "Totaal+Fooi: "
+        case "zh_Hans":
+            return "总+小费："
+        case "de":
+            return "Summe+Trinkgeld: "
+        default:
+            return "Total+Tip: "
+        }
+    }
+    
     @IBOutlet var totalLabel: WKInterfaceLabel!
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -41,7 +84,9 @@ class InterfaceController: WKInterfaceController {
     
     // Error message to display
     func presentError() {
-        self.presentAlert(withTitle: "Enter Total", message: "Please enter bill total before calculating tip", preferredStyle: WKAlertControllerStyle.alert, actions: [WKAlertAction.init(title: "OK", style: WKAlertActionStyle.default, handler: {})])
+        let errorTitle = getLocalizedErrorTitle()
+        let errorMessage = getLocalizedErrorMessage()
+        self.presentAlert(withTitle: errorTitle, message: errorMessage, preferredStyle: WKAlertControllerStyle.alert, actions: [WKAlertAction.init(title: "OK", style: WKAlertActionStyle.default, handler: {})])
     }
     
     // When backspace is pressed, remove last number
@@ -148,14 +193,14 @@ class InterfaceController: WKInterfaceController {
     }
     
     func updateLabel() {
-        totalLabel.setText("Bill amount: " + format.string(from: NSNumber(floatLiteral: total))!)
+        totalLabel.setText("\(billAmountString)" + format.string(from: NSNumber(floatLiteral: total))!)
     }
     
     func calculateTip() {
         if lastNumber.count > 1 && total > 0.0 {
             tipTotal = (total * SharedData.sharedInstance.tipPercent) / Double(SharedData.sharedInstance.numPeople)
             totalWithTip = total + tipTotal
-            totalLabel.setText("Tip: " + format.string(from: NSNumber(floatLiteral: tipTotal))!)
+            totalLabel.setText("\(tipString)" + format.string(from: NSNumber(floatLiteral: tipTotal))!)
         } else {
             presentError()
         }
@@ -164,10 +209,10 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func showTotalWithTipMenuPressed() {
         if tipTotal > 0.0 {
-            totalLabel.setText("Total+tip: " + format.string(from: NSNumber(floatLiteral: totalWithTip))!)
+            totalLabel.setText("\(totalPlusTipString)" + format.string(from: NSNumber(floatLiteral: totalWithTip))!)
         } else if total > 0.0 {
             calculateTip()
-            totalLabel.setText("Total+tip: " + format.string(from: NSNumber(floatLiteral: totalWithTip))!)
+            totalLabel.setText("\(totalPlusTipString)" + format.string(from: NSNumber(floatLiteral: totalWithTip))!)
         } else {
             presentError()
         }
@@ -204,9 +249,41 @@ class InterfaceController: WKInterfaceController {
         return numberFormatter
     }
     
+    // Localize error title
+    func getLocalizedErrorTitle() -> String {
+        let localeID = Locale.current.identifier
+        switch localeID {
+        case "nl_NL":
+            return "Voer Totaal in"
+        case "zh_Hans":
+            return "输入总计"
+        case "de":
+            return "Gesamtsumme eingeben"
+        default:
+            return "Enter Total"
+        }
+    }
+    
+    // Localize error message
+    func getLocalizedErrorMessage() -> String {
+        let localeID = Locale.current.identifier
+        switch localeID {
+        case "nl_NL":
+            return "Voer alstublieft de rekening totaal in voordat u de tip berekent"
+        case "zh_Hans":
+            return "计算提示前请输入帐单"
+        case "de":
+            return "Bitte rechnen Sie die Summe ein, bevor Sie den Tipp berechnen"
+        default:
+            return "Please enter bill total before calculating tip"
+        }
+    }
+    
     
 }
 
+
+// MARK: - Shared Data Singleton
 class SharedData {
     var numPeople = 1
     var tipPercent = 0.15
