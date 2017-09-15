@@ -20,49 +20,6 @@ class InterfaceController: WKInterfaceController {
     // formatting
     var format: NumberFormatter!
     
-    // Localization variables
-    var billAmountString = { () -> String in
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
-            return "Rekening hoeveelheid: "
-        case "zh_Hans":
-            return "帐单金额："
-        case "de":
-            return "Rechnungsbetrag: "
-        default:
-            return "Bill Amount: "
-        }
-    }
-    
-    var tipString = { () -> String in
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
-            return "Fooi: "
-        case "zh_Hans":
-            return "赏钱："
-        case "de":
-            return "Trinkgeld: "
-        default:
-            return "Tip: "
-        }
-    }
-    
-    var totalPlusTipString = { () -> String in
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
-            return "Totaal+Fooi: "
-        case "zh_Hans":
-            return "总+小费："
-        case "de":
-            return "Summe+Trinkgeld: "
-        default:
-            return "Total+Tip: "
-        }
-    }
-    
     @IBOutlet var totalLabel: WKInterfaceLabel!
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -193,14 +150,14 @@ class InterfaceController: WKInterfaceController {
     }
     
     func updateLabel() {
-        totalLabel.setText("\(billAmountString)" + format.string(from: NSNumber(floatLiteral: total))!)
+        totalLabel.setText("\(billAmountString())" + format.string(from: NSNumber(floatLiteral: total))!)
     }
     
     func calculateTip() {
         if lastNumber.count > 1 && total > 0.0 {
             tipTotal = (total * SharedData.sharedInstance.tipPercent) / Double(SharedData.sharedInstance.numPeople)
             totalWithTip = total + tipTotal
-            totalLabel.setText("\(tipString)" + format.string(from: NSNumber(floatLiteral: tipTotal))!)
+            totalLabel.setText("\(tipString())" + format.string(from: NSNumber(floatLiteral: tipTotal))!)
         } else {
             presentError()
         }
@@ -209,10 +166,10 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func showTotalWithTipMenuPressed() {
         if tipTotal > 0.0 {
-            totalLabel.setText("\(totalPlusTipString)" + format.string(from: NSNumber(floatLiteral: totalWithTip))!)
+            totalLabel.setText("\(totalPlusTipString())" + format.string(from: NSNumber(floatLiteral: totalWithTip))!)
         } else if total > 0.0 {
             calculateTip()
-            totalLabel.setText("\(totalPlusTipString)" + format.string(from: NSNumber(floatLiteral: totalWithTip))!)
+            totalLabel.setText("\(totalPlusTipString())" + format.string(from: NSNumber(floatLiteral: totalWithTip))!)
         } else {
             presentError()
         }
@@ -276,6 +233,49 @@ class InterfaceController: WKInterfaceController {
             return "Bitte rechnen Sie die Summe ein, bevor Sie den Tipp berechnen"
         default:
             return "Please enter bill total before calculating tip"
+        }
+    }
+    
+    // Localization variables
+    func billAmountString() -> String {
+        let localeID = Locale.current.identifier
+        switch localeID {
+        case "nl_NL":
+            return "Rekening hoeveelheid: "
+        case "zh_Hans":
+            return "帐单金额："
+        case "de":
+            return "Rechnungsbetrag: "
+        default:
+            return "Bill Amount: "
+        }
+    }
+    
+    func tipString() -> String {
+        let localeID = Locale.current.identifier
+        switch localeID {
+        case "nl_NL":
+            return "Fooi: "
+        case "zh_Hans":
+            return "赏钱："
+        case "de":
+            return "Trinkgeld: "
+        default:
+            return "Tip: "
+        }
+    }
+    
+    func totalPlusTipString() -> String {
+        let localeID = Locale.current.identifier
+        switch localeID {
+        case "nl_NL":
+            return "Totaal+Fooi: "
+        case "zh_Hans":
+            return "总+小费："
+        case "de":
+            return "Summe+Trinkgeld: "
+        default:
+            return "Total+Tip: "
         }
     }
     
