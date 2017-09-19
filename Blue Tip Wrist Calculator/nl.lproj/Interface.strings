@@ -42,7 +42,7 @@
 "jqn-ZW-bmh.title" = "Fooi";
 
 /* Class = "WKInterfaceLabel"; text = "Bill total: $0.00"; ObjectID = "qIS-Xf-j6n"; */
-"qIS-Xf-j6n.text" = "Rekening Totaal: $0.00";
+"qIS-Xf-j6n.text" = "Rekening Totaal: €0,00";
 
 /* Class = "WKInterfaceButton"; title = "2"; ObjectID = "tg3-M3-I9s"; */
 "tg3-M3-I9s.title" = "2";
