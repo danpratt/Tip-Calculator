@@ -47,8 +47,8 @@ class InterfaceController: WKInterfaceController {
     }
     
     // When backspace is pressed, remove last number
-    func backPressed() {
-//        print("← pressed")
+    @IBAction func backSpacePressed() {
+        print("← pressed")
         if lastNumber.count > 2 {
             total -= lastNumber.popLast()!
             total /= 10
@@ -59,10 +59,9 @@ class InterfaceController: WKInterfaceController {
             total = 0.00
             updateLabel()
         }
-
     }
     
-    func zeroPressed() {
+    @IBAction func zeroPressed() {
 //        print("0 pressed")
         total *= 10
         lastNumber.append(0.00)
@@ -72,12 +71,12 @@ class InterfaceController: WKInterfaceController {
     
     // Calculate total will call other function
     // because menu option will also exist
-    func calculatePressed() {
+    @IBAction func calculatePressed() {
 //        print("Calc pressed")
         calculateTip()
     }
     
-    func onePressed() {
+    @IBAction func onePressed() {
 //        print("1 pressed")
         total *= 10
         lastNumber.append(0.01)
@@ -85,7 +84,7 @@ class InterfaceController: WKInterfaceController {
         updateLabel()
     }
     
-    func twoPressed() {
+    @IBAction func twoPressed() {
 //        print("2 pressed")
         total *= 10
         lastNumber.append(0.02)
@@ -93,7 +92,7 @@ class InterfaceController: WKInterfaceController {
         updateLabel()
     }
     
-    func threePressed() {
+    @IBAction func threePressed() {
 //        print("3 pressed")
         total *= 10
         lastNumber.append(0.03)
@@ -101,7 +100,7 @@ class InterfaceController: WKInterfaceController {
         updateLabel()
     }
     
-    func fourPressed() {
+    @IBAction func fourPressed() {
 //        print("4 pressed")
         total *= 10
         lastNumber.append(0.04)
@@ -109,7 +108,7 @@ class InterfaceController: WKInterfaceController {
         updateLabel()
     }
     
-    func fivePressed() {
+    @IBAction func fivePressed() {
 //        print("5 pressed")
         total *= 10
         lastNumber.append(0.05)
@@ -117,7 +116,7 @@ class InterfaceController: WKInterfaceController {
         updateLabel()
     }
     
-    func sixPressed() {
+    @IBAction func sixPressed() {
 //        print("6 pressed")
         total *= 10
         lastNumber.append(0.06)
@@ -125,7 +124,7 @@ class InterfaceController: WKInterfaceController {
         updateLabel()
     }
     
-    func sevenPressed() {
+    @IBAction func sevenPressed() {
 //        print("7 pressed")
         total *= 10
         lastNumber.append(0.07)
@@ -133,7 +132,7 @@ class InterfaceController: WKInterfaceController {
         updateLabel()
     }
     
-    func eightPressed() {
+    @IBAction func eightPressed() {
 //        print("8 pressed")
         total *= 10
         lastNumber.append(0.08)
@@ -141,7 +140,7 @@ class InterfaceController: WKInterfaceController {
         updateLabel()
     }
     
-    func ninePressed() {
+    @IBAction func ninePressed() {
 //        print("9 pressed")
         total *= 10
         lastNumber.append(0.09)
@@ -149,11 +148,11 @@ class InterfaceController: WKInterfaceController {
         updateLabel()
     }
     
-    func updateLabel() {
+    @IBAction func updateLabel() {
         totalLabel.setText("\(billAmountString())" + format.string(from: NSNumber(floatLiteral: total))!)
     }
     
-    func calculateTip() {
+    @IBAction func calculateTip() {
         if lastNumber.count > 1 && total > 0.0 {
             tipTotal = (total * SharedData.sharedInstance.tipPercent) / Double(SharedData.sharedInstance.numPeople)
             totalWithTip = total + tipTotal

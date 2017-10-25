@@ -99,7 +99,7 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate, UI
             return
         }
         
-        let totalOfBillBeoreTip : Double = Double(((numberFormatter.number(from: billText)))!)
+        let totalOfBillBeoreTip : Double = Double(truncating: ((numberFormatter.number(from: billText)))!)
         
         print("Bill is \(String(describing: totalOfBillBeoreTip))")
         

@@ -12,8 +12,8 @@ import Foundation
 
 class OptionsController: WKInterfaceController {
 
-    @IBOutlet var peoplePicker: WKInterfacePicker!
-    @IBOutlet var tipSizePicker: WKInterfacePicker!
+    @IBOutlet weak var peoplePicker: WKInterfacePicker!
+    @IBOutlet weak var tipSizePicker: WKInterfacePicker!
     
     var people : Int?
     var peoplePickerData : [WKPickerItem]!
