@@ -12,7 +12,7 @@
 "I7Y-6z-hRV.title" = "0";
 
 /* Class = "WKInterfaceMenuItem"; title = "Total w/o Tip"; ObjectID = "MTn-IX-fAP"; */
-"MTn-IX-fAP.title" = "Total w/o Tip";
+"MTn-IX-fAP.title" = "Total ohne Trinkgeld";
 
 /* Class = "WKInterfaceButton"; title = "←"; ObjectID = "NjW-q9-By8"; */
 "NjW-q9-By8.title" = "←";
@@ -36,16 +36,16 @@
 "dvd-yb-qWt.title" = "9";
 
 /* Class = "WKInterfaceMenuItem"; title = "Total w/ Tip"; ObjectID = "inF-sb-HYU"; */
-"inF-sb-HYU.title" = "Total w/ Tip";
+"inF-sb-HYU.title" = "Total mit Trinkgeld";
 
 /* Class = "WKInterfaceMenuItem"; title = "Tip"; ObjectID = "jqn-ZW-bmh"; */
 "jqn-ZW-bmh.title" = "Tip";
 
 /* Class = "WKInterfaceLabel"; text = "Bill total: $0.00"; ObjectID = "qIS-Xf-j6n"; */
-"qIS-Xf-j6n.text" = "Bill total: €0,00";
+"qIS-Xf-j6n.text" = "Bill Total: €0,00";
 
 /* Class = "WKInterfaceButton"; title = "2"; ObjectID = "tg3-M3-I9s"; */
 "tg3-M3-I9s.title" = "2";
 
 /* Class = "WKInterfaceMenuItem"; title = "Clear"; ObjectID = "wmu-A6-Zaf"; */
-"wmu-A6-Zaf.title" = "Clear";
+"wmu-A6-Zaf.title" = "Zurücksetzen";

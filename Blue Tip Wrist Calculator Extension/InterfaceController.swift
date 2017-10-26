@@ -272,13 +272,11 @@ class InterfaceController: WKInterfaceController {
         case "zh_Hans":
             return "总+小费："
         case "de":
-            return "Summe+Trinkgeld: "
+            return "Total+Trinkgeld: "
         default:
             return "Total+Tip: "
         }
     }
-    
-    
 }
 
 
