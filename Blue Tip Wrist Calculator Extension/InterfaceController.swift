@@ -240,11 +240,11 @@ class InterfaceController: WKInterfaceController {
         let localeID = Locale.current.identifier
         switch localeID {
         case "nl_NL":
-            return "Bill Totaal: "
+            return "Rekening: "
         case "zh_Hans":
             return "帐单金额："
         case "de":
-            return "Bill Total: "
+            return "Rechnung: "
         default:
             return "Bill Amount: "
         }
