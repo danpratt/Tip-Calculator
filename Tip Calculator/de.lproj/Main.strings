@@ -3,19 +3,19 @@
 "080-VV-BFc.text" = "€";
 
 /* Class = "UIButton"; accessibilityLabel = "Calculate Tip"; ObjectID = "4Nm-wh-GeD"; */
-"4Nm-wh-GeD.accessibilityLabel" = "Calculate Tip";
+"4Nm-wh-GeD.accessibilityLabel" = "Trinkgeld berechnen";
 
 /* Class = "UITextField"; accessibilityHint = "Enter the total bill amount here."; ObjectID = "96g-vE-F4R"; */
-"96g-vE-F4R.accessibilityHint" = "Enter the total bill amount here.";
+"96g-vE-F4R.accessibilityHint" = "Geben Sie hier den Gesamtrechnungsbetrag ein.";
 
 /* Class = "UITextField"; accessibilityLabel = "Enter Amount"; ObjectID = "96g-vE-F4R"; */
-"96g-vE-F4R.accessibilityLabel" = "Enter Amount";
+"96g-vE-F4R.accessibilityLabel" = "Menge eingeben";
 
 /* Class = "UITextField"; placeholder = "enter total bill here"; ObjectID = "96g-vE-F4R"; */
-"96g-vE-F4R.placeholder" = "enter total bill here";
+"96g-vE-F4R.placeholder" = "geben sie hier die gesamtrechnung ein";
 
 /* Class = "UILabel"; text = "Number of People"; ObjectID = "Bg1-ZK-RUB"; */
-"Bg1-ZK-RUB.text" = "Number of People";
+"Bg1-ZK-RUB.text" = "Anzahl der Personen";
 
 /* Class = "UISegmentedControl"; F7P-pE-c9k.segmentTitles[0] = "1"; ObjectID = "F7P-pE-c9k"; */
 "F7P-pE-c9k.segmentTitles[0]" = "1";
@@ -36,7 +36,7 @@
 "F7P-pE-c9k.segmentTitles[5]" = "6";
 
 /* Class = "UILabel"; text = "Tip"; ObjectID = "FMv-yl-i3x"; */
-"FMv-yl-i3x.text" = "Tip";
+"FMv-yl-i3x.text" = "Trinkgeld";
 
 /* Class = "UISegmentedControl"; JDJ-wQ-B2H.segmentTitles[0] = "10%"; ObjectID = "JDJ-wQ-B2H"; */
 "JDJ-wQ-B2H.segmentTitles[0]" = "10%";
@@ -54,16 +54,16 @@
 "JDJ-wQ-B2H.segmentTitles[4]" = "25%";
 
 /* Class = "UILabel"; text = "Total"; ObjectID = "JYw-wZ-Zbh"; */
-"JYw-wZ-Zbh.text" = "Total";
+"JYw-wZ-Zbh.text" = "Summe";
 
 /* Class = "UILabel"; text = "Total With Tip"; ObjectID = "arf-tt-4NZ"; */
-"arf-tt-4NZ.text" = "Total With Tip";
+"arf-tt-4NZ.text" = "Summe mit Trinkgeld";
 
 /* Class = "UIButton"; accessibilityHint = "Allows you to split the bill"; ObjectID = "met-MY-4wh"; */
-"met-MY-4wh.accessibilityHint" = "Allows you to split the bill";
+"met-MY-4wh.accessibilityHint" = "Erlaubt die Aufteilung der Rechnung";
 
 /* Class = "UIButton"; accessibilityLabel = "Split Bill"; ObjectID = "met-MY-4wh"; */
-"met-MY-4wh.accessibilityLabel" = "Split Bill";
+"met-MY-4wh.accessibilityLabel" = "Split-Rechnung";
 
 /* Class = "UILabel"; text = "Tip Label"; ObjectID = "uFk-gG-TrZ"; */
-"uFk-gG-TrZ.text" = "Tip Label";
+"uFk-gG-TrZ.text" = "Trinkgeld Etikette";
