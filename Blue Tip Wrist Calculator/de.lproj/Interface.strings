@@ -39,7 +39,7 @@
 "inF-sb-HYU.title" = "Total mit Trinkgeld";
 
 /* Class = "WKInterfaceMenuItem"; title = "Tip"; ObjectID = "jqn-ZW-bmh"; */
-"jqn-ZW-bmh.title" = "Tip";
+"jqn-ZW-bmh.title" = "Trinkgeld";
 
 /* Class = "WKInterfaceLabel"; text = "Bill total: $0.00"; ObjectID = "qIS-Xf-j6n"; */
 "qIS-Xf-j6n.text" = "Bill Total: €0,00";
