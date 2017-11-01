@@ -41,6 +41,12 @@
       "scale" : "3x"
     },
     {
+      "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "BTC_Appstore_Icon_1024-1.png",
+      "scale" : "1x"
+    },
+    {
       "size" : "24x24",
       "idiom" : "watch",
       "filename" : "BTCAppIconnotificationCenter_24pt@2x.png",
@@ -101,6 +107,12 @@
       "scale" : "2x",
       "role" : "quickLook",
       "subtype" : "42mm"
+    },
+    {
+      "size" : "1024x1024",
+      "idiom" : "watch-marketing",
+      "filename" : "BTC_Appstore_Icon_1024.png",
+      "scale" : "1x"
     }
   ],
   "info" : {

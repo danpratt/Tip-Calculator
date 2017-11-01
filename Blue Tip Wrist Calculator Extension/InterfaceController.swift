@@ -238,6 +238,8 @@ class InterfaceController: WKInterfaceController {
     // Localization variables
     func billAmountString() -> String {
         let localeID = Locale.current.identifier
+        print("Locale ID is: \(localeID)")
+        print("Loale is: \(Locale.current)")
         switch localeID {
         case "nl_NL":
             return "Rekening: "
@@ -246,7 +248,7 @@ class InterfaceController: WKInterfaceController {
         case "de":
             return "Rechnung: "
         default:
-            return "Bill Amount: "
+            return "Bill total: "
         }
     }
     

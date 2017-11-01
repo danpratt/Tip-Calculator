@@ -197,16 +197,16 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate, UI
                 // if it isn't, we have to block entry
 
                 let index = textField.text?.index((textField.text?.endIndex)!, offsetBy: -1)
-                let checkChar = textField.text?.characters[index!]
+                let checkChar = textField.text?[index!]
                 
                 // Check the last entered character
                 if checkChar == "." || checkChar == "," {
                     return true
                 }
                 
-                if (textField.text?.characters.count)! > 2 {
+                if (textField.text?.count)! > 2 {
                     let secondIndex = textField.text?.index((textField.text?.endIndex)!, offsetBy: -2)
-                    let checkSecondChar = textField.text?.characters[secondIndex!]
+                    let checkSecondChar = textField.text?[secondIndex!]
                     if checkSecondChar == "." || checkSecondChar == "," {
                         return true
                     } else {
