@@ -24,21 +24,6 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Blue Tip Wrist Calculator (Dutch).xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
-		</dict>
-		<key>Blue Tip Wrist Calculator (German).xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-		<key>Blue Tip Wrist Calculator (Simplified Chinese).xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
 		<key>Blue Tip Wrist Calculator.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -58,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>6567A31D1BFCF6DF0008A1E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6567A3291BFCF6DF0008A1E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

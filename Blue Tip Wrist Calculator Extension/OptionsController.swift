@@ -19,9 +19,19 @@ class OptionsController: WKInterfaceController {
     var peoplePickerData : [WKPickerItem]!
     var tipPickerData : [WKPickerItem]!
     
+    // id used for localization, defaults to english
+    var localeLanguageID: String = "en"
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        // Configure interface objects here.
+        
+        // setup localization id first
+        if let language = Locale.current.languageCode {
+            localeLanguageID = language
+        }
+        
+        print("The locale language code is: \(localeLanguageID)")
+        
         let one = WKPickerItem()
         one.title = "1"
         one.caption = justMeLocalized()
@@ -103,11 +113,10 @@ class OptionsController: WKInterfaceController {
     // MARK: - Private Localization Methods
     
     private func justMeLocalized() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Alleen ik"
-        case "zh_Hans":
+        case "zh":
             return "就我自己"
         case "de":
             return "Nur ich"
@@ -117,11 +126,10 @@ class OptionsController: WKInterfaceController {
     }
     
     private func twoLocalized() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Mij en een andere"
-        case "zh_Hans":
+        case "zh":
             return "我和另一个"
         case "de":
             return "Ich und eine andere"
@@ -131,11 +139,10 @@ class OptionsController: WKInterfaceController {
     }
     
     private func threeLocalized() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Mij en twee anderen"
-        case "zh_Hans":
+        case "zh":
             return "我和另外两个人"
         case "de":
             return "Ich und zwei andere"
@@ -145,11 +152,10 @@ class OptionsController: WKInterfaceController {
     }
     
     private func fourLocalized() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Me en drie anderen"
-        case "zh_Hans":
+        case "zh":
             return "我和其他三人"
         case "de":
             return "Ich und drei andere"
@@ -159,11 +165,10 @@ class OptionsController: WKInterfaceController {
     }
     
     private func fiveLocalized() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Mij en vier anderen"
-        case "zh_Hans":
+        case "zh":
             return "我和其他四人"
         case "de":
             return "Ich und vier andere"
@@ -173,11 +178,10 @@ class OptionsController: WKInterfaceController {
     }
     
     private func sixLocalized() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Een feest!"
-        case "zh_Hans":
+        case "zh":
             return "派对!"
         case "de":
             return "Eine Partei!"
@@ -187,9 +191,8 @@ class OptionsController: WKInterfaceController {
     }
     
     private func tenPercentTipLocalized() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "zh_Hans":
+        switch localeLanguageID {
+        case "zh":
             return "子服务"
         default:
             return "Sub Par Service"
@@ -197,11 +200,10 @@ class OptionsController: WKInterfaceController {
     }
 
     private func fifteenPercentTipLocalized() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Normale Service"
-        case "zh_Hans":
+        case "zh":
             return "正常服务"
         case "de":
             return "Normaler Service"
@@ -211,25 +213,23 @@ class OptionsController: WKInterfaceController {
     }
     
     private func eighteenPercentTipLocalized() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Bovenstaande Service"
-        case "zh_Hans":
+        case "zh":
             return "高于平均水平服务"
         case "de":
-            return "Überdurchschnittlicher Service"
+            return "Überdurchschnittlicher"
         default:
             return "Above Average Service"
         }
     }
     
     private func twentyPercentTipLocalized() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Goede Service"
-        case "zh_Hans":
+        case "zh":
             return "伟大的服务"
         case "de":
             return "Guter Service"
@@ -239,11 +239,10 @@ class OptionsController: WKInterfaceController {
     }
     
     private func twentyFivePercentTipLocalized() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Legendarische Service"
-        case "zh_Hans":
+        case "zh":
             return "传奇服务"
         case "de":
             return "Legendärer Service"

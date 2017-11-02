@@ -16,6 +16,7 @@ class InterfaceController: WKInterfaceController {
     var tipTotal = 0.0
     var totalWithTip = 0.0
     var lastNumber = [0.00]
+    var localeLanguageID: String = "en"
     
     // formatting
     var format: NumberFormatter!
@@ -31,6 +32,12 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        if let language = Locale.current.languageCode {
+            localeLanguageID = language
+        }
+        
+        print("The locale language code is: \(localeLanguageID)")
         format = setupNumberFormatter()
     }
 
@@ -207,11 +214,10 @@ class InterfaceController: WKInterfaceController {
     
     // Localize error title
     func getLocalizedErrorTitle() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Voer Totaal in"
-        case "zh_Hans":
+        case "zh":
             return "输入总计"
         case "de":
             return "Gesamtsumme eingeben"
@@ -222,11 +228,10 @@ class InterfaceController: WKInterfaceController {
     
     // Localize error message
     func getLocalizedErrorMessage() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Voer alstublieft de rekening totaal in voordat u de tip berekent"
-        case "zh_Hans":
+        case "zh":
             return "计算提示前请输入帐单"
         case "de":
             return "Bitte rechnen Sie die Summe ein, bevor Sie den Tipp berechnen"
@@ -237,14 +242,11 @@ class InterfaceController: WKInterfaceController {
     
     // Localization variables
     func billAmountString() -> String {
-        let localeID = Locale.current.identifier
-        print("Locale ID is: \(localeID)")
-        print("Loale is: \(Locale.current)")
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Rekening: "
-        case "zh_Hans":
-            return "帐单金额："
+        case "zh":
+            return "帐单总额: "
         case "de":
             return "Rechnung: "
         default:
@@ -253,12 +255,11 @@ class InterfaceController: WKInterfaceController {
     }
     
     func tipString() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Fooi: "
-        case "zh_Hans":
-            return "赏钱："
+        case "zh":
+            return "赏钱: "
         case "de":
             return "Trinkgeld: "
         default:
@@ -267,12 +268,11 @@ class InterfaceController: WKInterfaceController {
     }
     
     func totalPlusTipString() -> String {
-        let localeID = Locale.current.identifier
-        switch localeID {
-        case "nl_NL":
+        switch localeLanguageID {
+        case "nl":
             return "Totaal+Fooi: "
-        case "zh_Hans":
-            return "总+小费："
+        case "zh":
+            return "总+小费: "
         case "de":
             return "Total+Trinkgeld: "
         default:
