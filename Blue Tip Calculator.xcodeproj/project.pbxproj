@@ -19,6 +19,8 @@
 		6570FB2B1FAA83E600FB0942 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6570FB2A1FAA83E600FB0942 /* ExtensionDelegate.swift */; };
 		65789B521F44A876001C89D9 /* BTCViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65789B511F44A876001C89D9 /* BTCViewControllerTests.swift */; };
 		657BB8331F4608E80056FB65 /* Blue_Tip_CalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BB8321F4608E80056FB65 /* Blue_Tip_CalcUITests.swift */; };
+		659671481FAD26CD008F65CC /* BTCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659671471FAD26CD008F65CC /* BTCMainViewController.swift */; };
+		6596714B1FAD2A06008F65CC /* RateInAppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6596714A1FAD2A06008F65CC /* RateInAppStore.swift */; };
 		65A5DF801BFD483F00AD3F92 /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */; };
 		65B361061B71B6BF008B8094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B361051B71B6BF008B8094 /* AppDelegate.swift */; };
 		65B361081B71B6BF008B8094 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B361071B71B6BF008B8094 /* ViewController.swift */; };
@@ -112,6 +114,8 @@
 		658F58771F5DD91400D481D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		658F58781F5DD91400D481D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		658F58791F5DD91400D481D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Interface.strings; sourceTree = "<group>"; };
+		659671471FAD26CD008F65CC /* BTCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCMainViewController.swift; sourceTree = "<group>"; };
+		6596714A1FAD2A06008F65CC /* RateInAppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateInAppStore.swift; sourceTree = "<group>"; };
 		65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
 		65B173B81BA2274600B56A55 /* Blue Tip Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Tip Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B361051B71B6BF008B8094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +208,22 @@
 			path = "Blue Tip CalcUITests";
 			sourceTree = "<group>";
 		};
+		659671461FAD2597008F65CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				659671471FAD26CD008F65CC /* BTCMainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		659671491FAD29DC008F65CC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6596714A1FAD2A06008F65CC /* RateInAppStore.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		65B360F91B71B6BF008B8094 = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +243,8 @@
 		65B361041B71B6BF008B8094 /* Tip Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				659671491FAD29DC008F65CC /* Protocols */,
+				659671461FAD2597008F65CC /* Controller */,
 				65B361051B71B6BF008B8094 /* AppDelegate.swift */,
 				65B361071B71B6BF008B8094 /* ViewController.swift */,
 				655B594A1E46DD6000F7A03E /* AppOpenCount.swift */,
@@ -469,6 +491,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6596714B1FAD2A06008F65CC /* RateInAppStore.swift in Sources */,
+				659671481FAD26CD008F65CC /* BTCMainViewController.swift in Sources */,
 				65B361081B71B6BF008B8094 /* ViewController.swift in Sources */,
 				655B594B1E46DD6000F7A03E /* AppOpenCount.swift in Sources */,
 				655B59491E46DADB00F7A03E /* Alerts.swift in Sources */,
