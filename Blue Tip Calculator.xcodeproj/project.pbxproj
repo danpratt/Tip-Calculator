@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		65141F0B1FB234530092980E /* TipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65141F0A1FB234530092980E /* TipCalculator.swift */; };
+		65141F0D1FB239DD0092980E /* BTCTipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65141F0C1FB239DD0092980E /* BTCTipCalculator.swift */; };
 		652305621FAB89EC0015447E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6567A3201BFCF6DF0008A1E4 /* Interface.storyboard */; };
 		6530BE0B1FB17993008E30A1 /* BTCAppStoreReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530BE0A1FB17993008E30A1 /* BTCAppStoreReview.swift */; };
 		655B59491E46DADB00F7A03E /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B59481E46DADB00F7A03E /* Alerts.swift */; };
@@ -90,6 +91,7 @@
 /* Begin PBXFileReference section */
 		650BA1B61BFD460E0056BCE2 /* Blue Tip Wrist Calculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blue Tip Wrist Calculator-Bridging-Header.h"; sourceTree = "<group>"; };
 		65141F0A1FB234530092980E /* TipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculator.swift; sourceTree = "<group>"; };
+		65141F0C1FB239DD0092980E /* BTCTipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCTipCalculator.swift; sourceTree = "<group>"; };
 		6530BE0A1FB17993008E30A1 /* BTCAppStoreReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCAppStoreReview.swift; sourceTree = "<group>"; };
 		655B59481E46DADB00F7A03E /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		655B594A1E46DD6000F7A03E /* AppOpenCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOpenCount.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				6530BE0A1FB17993008E30A1 /* BTCAppStoreReview.swift */,
+				65141F0C1FB239DD0092980E /* BTCTipCalculator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				6596714B1FAD2A06008F65CC /* RateInAppStore.swift in Sources */,
 				6530BE0B1FB17993008E30A1 /* BTCAppStoreReview.swift in Sources */,
 				659671481FAD26CD008F65CC /* BTCMainViewController.swift in Sources */,
+				65141F0D1FB239DD0092980E /* BTCTipCalculator.swift in Sources */,
 				65B361081B71B6BF008B8094 /* ViewController.swift in Sources */,
 				655B594B1E46DD6000F7A03E /* AppOpenCount.swift in Sources */,
 				65141F0B1FB234530092980E /* TipCalculator.swift in Sources */,

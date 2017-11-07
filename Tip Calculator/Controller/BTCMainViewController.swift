@@ -10,9 +10,8 @@ import Foundation
 import UIKit
 
 class BTCMainViewController: UIViewController {
-    // holds app open count information
-    let appStoreReview = BTCAppStoreReview()
-    
+
+    // MARK: - IBOutlets
     @IBOutlet weak var numberOfPeopleButton: UIButton!
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
@@ -20,11 +19,14 @@ class BTCMainViewController: UIViewController {
     @IBOutlet weak var tipAmountSegment: UISegmentedControl!
     
     // Hidden until split bill is tapped
-    
     @IBOutlet weak var numPeopleLabel: UILabel!
-    
-    var tipValue: Double = 0.15
-    var numPeopleToSplit: Int = 1
-    var isSplittingBill: Bool = false
     @IBOutlet weak var numPeopleSegment: UISegmentedControl!
+    
+    // MARK: - Objects
+    
+    // Tracks app opens to determine if app store review should be displayed or not
+    let rateInAppStore = BTCAppStoreReview()
+    
+    // Holds bill and calculates tip and total amount
+    var tipCalculator = BTCTipCalculator()
 }

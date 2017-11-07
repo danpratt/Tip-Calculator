@@ -7,10 +7,10 @@
 //
 
 protocol TipCalculator {
-    var tipPercentValue: Double { get set }
-    var numPeopleSplittingBill: Int { get set }
-    var isBillBeingSplit: Bool { get set }
-    var billAmount: Double { get set }
+    var tipPercentValue: Double { get }
+    var numPeopleSplittingBill: Int { get }
+    var isBillBeingSplit: Bool { get }
+    var billAmount: Double { get }
     var amountToTip: Double { get }
     var totalBillWithTipAmount: Double { get }
 }
@@ -27,13 +27,18 @@ extension TipCalculator {
         
     }
     
+    // returns the total for the bill including tip
     var totalBillWithTipAmount: Double {
-        // returns the total for the bill
         let total = billAmount + amountToTip
         if !isBillBeingSplit {
             return total
         } else {
             return total / Double(numPeopleSplittingBill)
         }
+    }
+    
+    // returns a bool saying if tip is being split or not
+    var isBillBeingSplit: Bool {
+        return numPeopleSplittingBill > 1
     }
 }
