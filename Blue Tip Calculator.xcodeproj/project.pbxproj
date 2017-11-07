@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		652305621FAB89EC0015447E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6567A3201BFCF6DF0008A1E4 /* Interface.storyboard */; };
+		6530BE0B1FB17993008E30A1 /* BTCAppStoreReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530BE0A1FB17993008E30A1 /* BTCAppStoreReview.swift */; };
 		655B59491E46DADB00F7A03E /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B59481E46DADB00F7A03E /* Alerts.swift */; };
 		655B594B1E46DD6000F7A03E /* AppOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B594A1E46DD6000F7A03E /* AppOpenCount.swift */; };
 		6567A3221BFCF6DF0008A1E4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6567A3201BFCF6DF0008A1E4 /* Interface.storyboard */; };
@@ -87,6 +88,7 @@
 
 /* Begin PBXFileReference section */
 		650BA1B61BFD460E0056BCE2 /* Blue Tip Wrist Calculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blue Tip Wrist Calculator-Bridging-Header.h"; sourceTree = "<group>"; };
+		6530BE0A1FB17993008E30A1 /* BTCAppStoreReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCAppStoreReview.swift; sourceTree = "<group>"; };
 		655B59481E46DADB00F7A03E /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		655B594A1E46DD6000F7A03E /* AppOpenCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOpenCount.swift; sourceTree = "<group>"; };
 		6567A31E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Tip Wrist Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6530BE091FB17959008E30A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6530BE0A1FB17993008E30A1 /* BTCAppStoreReview.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6567A31F1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +253,7 @@
 		65B361041B71B6BF008B8094 /* Tip Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				6530BE091FB17959008E30A1 /* Model */,
 				659671491FAD29DC008F65CC /* Protocols */,
 				659671461FAD2597008F65CC /* Controller */,
 				65B361051B71B6BF008B8094 /* AppDelegate.swift */,
@@ -492,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6596714B1FAD2A06008F65CC /* RateInAppStore.swift in Sources */,
+				6530BE0B1FB17993008E30A1 /* BTCAppStoreReview.swift in Sources */,
 				659671481FAD26CD008F65CC /* BTCMainViewController.swift in Sources */,
 				65B361081B71B6BF008B8094 /* ViewController.swift in Sources */,
 				655B594B1E46DD6000F7A03E /* AppOpenCount.swift in Sources */,

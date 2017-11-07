@@ -38,6 +38,11 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate, UI
         // Do any additional setup after loading the view, typically from a nib.
         self.numberOfPeopleButton.imageView?.contentMode = .scaleAspectFit
         updateTimesUserHasOpenedApp()
+        let rateInAppStore = BTCAppStoreReview()
+        let shouldShowReview = rateInAppStore.shouldAskToRate
+        print("The app has been opened \(String(describing: rateInAppStore.timesUserHasOpenedApp))")
+        print("User has requested not to be bugged: \(String(describing: rateInAppStore.doNotBugToRate))")
+        print("The user should be shown the review screen: \(shouldShowReview)")
         billTextField.delegate = self
     }
 
