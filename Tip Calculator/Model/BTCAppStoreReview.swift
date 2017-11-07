@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import StoreKit
 
 struct BTCAppStoreReview: RateInAppStore {
     

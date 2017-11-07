@@ -43,6 +43,11 @@ class ViewController: UIViewController, SKStoreProductViewControllerDelegate, UI
         print("The app has been opened \(String(describing: rateInAppStore.timesUserHasOpenedApp))")
         print("User has requested not to be bugged: \(String(describing: rateInAppStore.doNotBugToRate))")
         print("The user should be shown the review screen: \(shouldShowReview)")
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        } else {
+            // Fallback on earlier versions
+        }
         billTextField.delegate = self
     }
 
