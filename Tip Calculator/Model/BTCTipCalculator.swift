@@ -11,7 +11,6 @@ import Foundation
 struct BTCTipCalculator: TipCalculator {
     var tipPercentValue: Double = 0.15
     var numPeopleSplittingBill: Int = 1
-    var isBillBeingSplit: Bool = false
     var billAmount: Double = 0.0
     
     /// This should be set from interface, entered by the user and represents the final amount of their bill.  This should be entered in a 000.00 format (two decmial places) and is the amount used for calculating tip, and total bill.
@@ -43,7 +42,10 @@ struct BTCTipCalculator: TipCalculator {
     /// - parameters:
     ///   - numPeople: (Int) The number of people splitting a bill.
     mutating func setNumPeopleSplitting(numPeople: Int) {
+        print("Before setting: \(self.numPeopleSplittingBill)")
         self.numPeopleSplittingBill = numPeople
+        print("After setting: \(self.numPeopleSplittingBill)")
+        print("Are people splitting bill set to: \(self.isBillBeingSplit)")
     }
     
     /// This value should be set by user and represents the percentage of the tip as a double.
