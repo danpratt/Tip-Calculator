@@ -18,10 +18,22 @@ protocol TipCalculator {
 extension TipCalculator {
     // returns the total for the tip
     var amountToTip: Double {
-        return billAmount * tipPercentValue
+        let total = billAmount * tipPercentValue
+        if !isBillBeingSplit {
+            return total
+        } else {
+            return total / Double(numPeopleSplittingBill)
+        }
+        
     }
     
     var totalBillWithTipAmount: Double {
-        return billAmount + amountToTip
+        // returns the total for the bill
+        let total = billAmount + amountToTip
+        if !isBillBeingSplit {
+            return total
+        } else {
+            return total / Double(numPeopleSplittingBill)
+        }
     }
 }
