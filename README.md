@@ -19,9 +19,12 @@ This app was written while I was an even bigger newbie than I am now.  The entir
 - 3D Touch support for iOS version
 - Support for custom tip amount
 - Round option so you can round a tip to the nearest dollar amount.
-- Region support so that correct currency symbol shows up
 - Photograph / Social sharing option
 - Receipt storage
+
+## Currently Working On...
+
+I am currently rewriting using Apple's recommended protocol oriented programming.  So far I have written a couple of protocols, and a few test cases.
 
 ## Contributing
 
