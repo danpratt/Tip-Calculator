@@ -62,6 +62,21 @@ class BTCTipCalculatorTests: XCTestCase {
         XCTAssertTrue(totalBill == 12.64)
     }
     
+    func testSetTipAmount_totalsCalculate() {
+        tipCalculator.setBillAmount(billAmount: 10.99)
+        tipCalculator.setTipPercentValue(tipPercent: 0.20)
+        
+        // make sure that calculated tip is correct
+        let tipAmountString = numberFormatter.string(from: tipCalculator.amountToTip as NSNumber)
+        let tipAmount = Double(truncating: numberFormatter.number(from: tipAmountString!)!)
+        XCTAssert(tipAmount == 2.20)
+        
+        // make sure that total bill is correct
+        let totalBillString = numberFormatter.string(from: tipCalculator.totalBillWithTipAmount as NSNumber)
+        let totalBill = Double(truncating: numberFormatter.number(from: totalBillString!)!)
+        XCTAssertTrue(totalBill == 13.19)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

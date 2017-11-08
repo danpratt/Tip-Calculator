@@ -42,10 +42,7 @@ struct BTCTipCalculator: TipCalculator {
     /// - parameters:
     ///   - numPeople: (Int) The number of people splitting a bill.
     mutating func setNumPeopleSplitting(numPeople: Int) {
-        print("Before setting: \(self.numPeopleSplittingBill)")
         self.numPeopleSplittingBill = numPeople
-        print("After setting: \(self.numPeopleSplittingBill)")
-        print("Are people splitting bill set to: \(self.isBillBeingSplit)")
     }
     
     /// This value should be set by user and represents the percentage of the tip as a double.
