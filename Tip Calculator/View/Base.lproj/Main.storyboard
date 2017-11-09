@@ -22,54 +22,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UPF-NO-FpC" userLabel="Footer Stack View">
-                                <rect key="frame" x="16" y="629" width="343" height="30"/>
-                                <subviews>
-                                    <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="F7P-pE-c9k">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="1"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <segments>
-                                            <segment title="1"/>
-                                            <segment title="2"/>
-                                            <segment title="3"/>
-                                            <segment title="4"/>
-                                            <segment title="5"/>
-                                            <segment title="6"/>
-                                        </segments>
-                                        <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        <connections>
-                                            <action selector="numPeopleSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hBD-qA-tvK"/>
-                                            <action selector="tipAmountSegmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="bLi-X2-pm5"/>
-                                        </connections>
-                                    </segmentedControl>
-                                    <stackView opaque="NO" tag="8" contentMode="scaleAspectFit" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cd3-te-gAt" userLabel="Splitter Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
-                                        <subviews>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of People" textAlignment="center" lineBreakMode="wordWrap" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bg1-ZK-RUB">
-                                                <rect key="frame" x="-8" y="0.0" width="0.0" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="bottomRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="met-MY-4wh" userLabel="Split Bill Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Allows you to split the bill" label="Split Bill"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="Jzm-oZ-7sN"/>
-                                                </constraints>
-                                                <state key="normal" image="people"/>
-                                                <connections>
-                                                    <action selector="splitBillButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e11-3N-etV"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="met-MY-4wh" firstAttribute="leading" secondItem="Bg1-ZK-RUB" secondAttribute="trailing" constant="8" id="9iv-cu-bEI"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="F7P-pE-c9k">
+                                <rect key="frame" x="20" y="593" width="335" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                </segments>
+                                <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="numPeopleSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hBD-qA-tvK"/>
+                                    <action selector="tipAmountSegmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="bLi-X2-pm5"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="bottomRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="met-MY-4wh" userLabel="Split Bill Button">
+                                <rect key="frame" x="172" y="629" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="Allows you to split the bill" label="Split Bill"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="FUS-f7-Pvc"/>
+                                    <constraint firstAttribute="height" constant="30" id="Jzm-oZ-7sN"/>
+                                </constraints>
+                                <state key="normal" image="people"/>
+                                <connections>
+                                    <action selector="splitBillButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e11-3N-etV"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ReA-Be-p8v" userLabel="Header Stack View">
                                 <rect key="frame" x="16" y="28" width="343" height="140"/>
                                 <subviews>
@@ -159,15 +140,27 @@
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of People" textAlignment="center" lineBreakMode="wordWrap" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bg1-ZK-RUB">
+                                <rect key="frame" x="109" y="635" width="156" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000000000002" green="0.79607843137254897" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UPF-NO-FpC" secondAttribute="bottom" constant="8" id="7uQ-W6-HAa"/>
+                            <constraint firstItem="met-MY-4wh" firstAttribute="top" secondItem="F7P-pE-c9k" secondAttribute="bottom" constant="8" symbolic="YES" id="Ae2-gx-5dP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bg1-ZK-RUB" secondAttribute="bottom" constant="8" symbolic="YES" id="B1k-ew-Ssq"/>
+                            <constraint firstItem="Bg1-ZK-RUB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IYr-ae-oYW"/>
+                            <constraint firstAttribute="trailing" secondItem="met-MY-4wh" secondAttribute="trailing" priority="750" constant="20" symbolic="YES" id="MAk-Sk-acr"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ReA-Be-p8v" secondAttribute="leading" id="TkH-4F-bVT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ReA-Be-p8v" secondAttribute="trailing" id="VM0-MW-lhP"/>
-                            <constraint firstItem="ReA-Be-p8v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="XHz-mg-itS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UPF-NO-FpC" secondAttribute="trailing" id="aCS-wZ-QBU"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="UPF-NO-FpC" secondAttribute="leading" id="idw-dy-HvH"/>
+                            <constraint firstItem="ReA-Be-p8v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="XHz-mg-itS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="met-MY-4wh" secondAttribute="bottom" constant="8" symbolic="YES" id="kSW-MP-YHi"/>
+                            <constraint firstAttribute="trailing" secondItem="F7P-pE-c9k" secondAttribute="trailing" constant="20" symbolic="YES" id="oW3-TP-9QY"/>
+                            <constraint firstItem="met-MY-4wh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" priority="751" id="zAG-EH-2tq"/>
+                            <constraint firstItem="F7P-pE-c9k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="zJq-xB-xtJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -175,6 +168,8 @@
                         <outlet property="numPeopleLabel" destination="Bg1-ZK-RUB" id="gCb-8e-KyA"/>
                         <outlet property="numPeopleSegment" destination="F7P-pE-c9k" id="3cQ-Aq-AIn"/>
                         <outlet property="numberOfPeopleButton" destination="met-MY-4wh" id="tgG-dI-aK0"/>
+                        <outlet property="splitBillButtonCenterConstraint" destination="zAG-EH-2tq" id="9Xw-mS-hT6"/>
+                        <outlet property="splitBillButtonTrailingConstraint" destination="MAk-Sk-acr" id="bZo-3c-HSL"/>
                         <outlet property="tipAmountSegment" destination="JDJ-wQ-B2H" id="KhA-Mm-ckC"/>
                         <outlet property="tipLabel" destination="uFk-gG-TrZ" id="9p8-wo-L8W"/>
                         <outlet property="totalWithTip" destination="arf-tt-4NZ" id="UPv-34-NMy"/>

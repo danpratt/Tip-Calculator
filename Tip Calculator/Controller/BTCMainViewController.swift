@@ -23,6 +23,11 @@ class BTCMainViewController: UIViewController {
     @IBOutlet weak var numPeopleLabel: UILabel!
     @IBOutlet weak var numPeopleSegment: UISegmentedControl!
     
+    // Outlets for Constraints
+    @IBOutlet weak var splitBillButtonCenterConstraint: NSLayoutConstraint!
+    @IBOutlet weak var splitBillButtonTrailingConstraint: NSLayoutConstraint!
+    
+    
     // MARK: - Objects
     
     // Tracks app opens to determine if app store review should be displayed or not
@@ -80,11 +85,15 @@ class BTCMainViewController: UIViewController {
     // Will control show or hide the split bill items
     @IBAction func splitBillButtonPressed(_ sender: UIButton) {
         if numPeopleLabel.isHidden {
+            splitBillButtonTrailingConstraint.priority = .defaultHigh
+            splitBillButtonCenterConstraint.priority = .defaultLow
             numPeopleLabel.isHidden = false
             numPeopleSegment.isEnabled = true
             numPeopleSegment.isHidden = false
             calculateTip()
         } else {
+            splitBillButtonTrailingConstraint.priority = .defaultLow
+            splitBillButtonCenterConstraint.priority = .defaultHigh
             numPeopleLabel.isHidden = true
             numPeopleSegment.isEnabled = false
             numPeopleSegment.isHidden = true
