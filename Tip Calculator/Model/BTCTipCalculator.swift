@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct BTCTipCalculator: TipCalculator {
-    var tipPercentValue: Double = 0.15
+class BTCTipCalculator: TipCalculator {
+    var tipPercentValue: TipPercentValue = .fifteen
     var numPeopleSplittingBill: Int = 1
     var billAmount: Double = 0.0
     
@@ -25,7 +25,7 @@ struct BTCTipCalculator: TipCalculator {
     ///
     /// - parameters:
     ///   - billAmount: (Double) The input value from user representing the pre-tip bill the user must pay.
-    mutating func setBillAmount(billAmount: Double) {
+    func setBillAmount(billAmount: Double) {
         self.billAmount = billAmount
     }
     
@@ -41,7 +41,7 @@ struct BTCTipCalculator: TipCalculator {
     ///
     /// - parameters:
     ///   - numPeople: (Int) The number of people splitting a bill.
-    mutating func setNumPeopleSplitting(numPeople: Int) {
+    func setNumPeopleSplitting(numPeople: Int) {
         self.numPeopleSplittingBill = numPeople
     }
     
@@ -58,7 +58,15 @@ struct BTCTipCalculator: TipCalculator {
     ///
     /// - parameters:
     ///   - tipPercent: (Double) The decmial value of a tip.
-    mutating func setTipPercentValue(tipPercent: Double) {
+    func setTipPercentValue(tipPercent: TipPercentValue) {
         self.tipPercentValue = tipPercent
     }
+    
+    class var sharedInstance : BTCTipCalculator {
+        struct CalcData {
+            static let instance = BTCTipCalculator()
+        }
+        return CalcData.instance
+    }
+    
 }

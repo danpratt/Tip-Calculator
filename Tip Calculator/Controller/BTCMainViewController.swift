@@ -61,24 +61,7 @@ class BTCMainViewController: UIViewController {
         tipAmountSegment.resignFirstResponder()
         billTextField.resignFirstResponder() // in case keyboard is still open, close it
         
-        switch currentSegment {
-        case 0:
-            tipCalculator.setTipPercentValue(tipPercent: 0.10)
-        case 1:
-            tipCalculator.setTipPercentValue(tipPercent: 0.15)
-
-        case 2:
-            tipCalculator.setTipPercentValue(tipPercent: 0.18)
-
-        case 3:
-            tipCalculator.setTipPercentValue(tipPercent: 0.20)
-
-        case 4:
-            tipCalculator.setTipPercentValue(tipPercent: 0.25)
-
-        default:
-            tipCalculator.setTipPercentValue(tipPercent: 0.20)
-        }
+        tipCalculator.setTipPercentValue(tipPercent: TipPercentValue.fromHashValue(hashValue: currentSegment))
         calculateTip()
     }
     
@@ -123,7 +106,7 @@ class BTCMainViewController: UIViewController {
         }
         
         // setup the number formatter
-        let numberFormatter = setupNumberFormatter()
+        let numberFormatter = BTCNumberFormatter().numberFormatter
         
         // get a double value for the bill (keyboard delegate has prevented anything but numbers from being entered)
         let billTotal : Double = Double(truncating: ((numberFormatter.number(from: billText)))!)
@@ -146,19 +129,6 @@ class BTCMainViewController: UIViewController {
             totalWithTip.isHidden = false
         }
         
-    }
-    
-    // MARK: - Number Formatter
-    
-    private func setupNumberFormatter() -> NumberFormatter {
-        let numberFormatter = NumberFormatter()
-        numberFormatter.maximumFractionDigits = 2
-        numberFormatter.minimumFractionDigits = 2
-        //numberFormatter.locale = Locale(identifier: Locale.current.identifier)
-        numberFormatter.numberStyle = .currency
-        numberFormatter.isLenient = true
-        
-        return numberFormatter
     }
 }
 

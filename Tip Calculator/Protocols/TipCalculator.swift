@@ -7,7 +7,7 @@
 //
 
 protocol TipCalculator {
-    var tipPercentValue: Double { get }
+    var tipPercentValue: TipPercentValue { get }
     var numPeopleSplittingBill: Int { get }
     var isBillBeingSplit: Bool { get }
     var billAmount: Double { get }
@@ -18,7 +18,7 @@ protocol TipCalculator {
 extension TipCalculator {
     // returns the total for the tip
     var amountToTip: Double {
-        let total = billAmount * tipPercentValue
+        let total = billAmount * tipPercentValue.rawValue
         if !isBillBeingSplit {
             return total
         } else {

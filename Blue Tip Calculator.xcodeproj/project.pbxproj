@@ -28,6 +28,14 @@
 		65B3610B1B71B6BF008B8094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B361091B71B6BF008B8094 /* Main.storyboard */; };
 		65B3610D1B71B6BF008B8094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B3610C1B71B6BF008B8094 /* Assets.xcassets */; };
 		65B361101B71B6BF008B8094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B3610E1B71B6BF008B8094 /* LaunchScreen.storyboard */; };
+		65DB7FF31FB511EF00D93161 /* BTCNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB7FF21FB511EF00D93161 /* BTCNumberFormatter.swift */; };
+		65DB7FF41FB512BF00D93161 /* BTCNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB7FF21FB511EF00D93161 /* BTCNumberFormatter.swift */; };
+		65DB7FF61FB51AC400D93161 /* InterfaceControllerLocalizationMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB7FF51FB51AC400D93161 /* InterfaceControllerLocalizationMethods.swift */; };
+		65FF523A1FB4FCB5002CA71F /* BTCTipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65141F0C1FB239DD0092980E /* BTCTipCalculator.swift */; };
+		65FF523B1FB4FCBF002CA71F /* TipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65141F0A1FB234530092980E /* TipCalculator.swift */; };
+		65FF523D1FB503E7002CA71F /* BTCTipPercent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF523C1FB503E7002CA71F /* BTCTipPercent.swift */; };
+		65FF523E1FB503EA002CA71F /* BTCTipPercent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF523C1FB503E7002CA71F /* BTCTipPercent.swift */; };
+		65FF52431FB50EC1002CA71F /* OptionsControllerLocalizationMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF52421FB50EC1002CA71F /* OptionsControllerLocalizationMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,9 +111,7 @@
 		6567A3371BFCF6E00008A1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6567A3391BFCF6E00008A1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6570FB2A1FAA83E600FB0942 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		65789B471F44A849001C89D9 /* Blue Tip CalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blue Tip CalcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65789B4B1F44A849001C89D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		657BB8301F4608E80056FB65 /* Blue Tip CalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blue Tip CalcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		657BB8321F4608E80056FB65 /* Blue_Tip_CalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blue_Tip_CalcUITests.swift; sourceTree = "<group>"; };
 		657BB8341F4608E80056FB65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		658F58711F5DCCC600D481D7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -126,6 +132,12 @@
 		65B3610C1B71B6BF008B8094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B3610F1B71B6BF008B8094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65B361111B71B6BF008B8094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DB7FF01FB50F6800D93161 /* Blue Tip CalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blue Tip CalcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DB7FF11FB50F6800D93161 /* Blue Tip CalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blue Tip CalcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DB7FF21FB511EF00D93161 /* BTCNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCNumberFormatter.swift; sourceTree = "<group>"; };
+		65DB7FF51FB51AC400D93161 /* InterfaceControllerLocalizationMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceControllerLocalizationMethods.swift; sourceTree = "<group>"; };
+		65FF523C1FB503E7002CA71F /* BTCTipPercent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCTipPercent.swift; sourceTree = "<group>"; };
+		65FF52421FB50EC1002CA71F /* OptionsControllerLocalizationMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsControllerLocalizationMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +177,8 @@
 			children = (
 				6530BE0A1FB17993008E30A1 /* BTCAppStoreReview.swift */,
 				65141F0C1FB239DD0092980E /* BTCTipCalculator.swift */,
+				65FF523C1FB503E7002CA71F /* BTCTipPercent.swift */,
+				65DB7FF21FB511EF00D93161 /* BTCNumberFormatter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,7 +203,7 @@
 		6567A31F1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				6567A3201BFCF6DF0008A1E4 /* Interface.storyboard */,
+				65FF52381FB4FAF5002CA71F /* Views */,
 				6567A3231BFCF6DF0008A1E4 /* Assets.xcassets */,
 				6567A3251BFCF6DF0008A1E4 /* Info.plist */,
 			);
@@ -199,8 +213,7 @@
 		6567A32E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension */ = {
 			isa = PBXGroup;
 			children = (
-				6567A3311BFCF6E00008A1E4 /* InterfaceController.swift */,
-				65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */,
+				65FF52391FB4FBC1002CA71F /* Controllers */,
 				6567A3371BFCF6E00008A1E4 /* Assets.xcassets */,
 				6567A3391BFCF6E00008A1E4 /* Info.plist */,
 				6567A32F1BFCF6E00008A1E4 /* Supporting Files */,
@@ -262,10 +275,10 @@
 				6567A31F1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */,
 				6567A32A1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension.appex */,
 				6567A32E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension */,
-				65789B471F44A849001C89D9 /* Blue Tip CalcTests.xctest */,
 				65789B481F44A849001C89D9 /* Blue Tip CalcTests */,
-				657BB8301F4608E80056FB65 /* Blue Tip CalcUITests.xctest */,
 				657BB8311F4608E80056FB65 /* Blue Tip CalcUITests */,
+				65DB7FF01FB50F6800D93161 /* Blue Tip CalcTests.xctest */,
+				65DB7FF11FB50F6800D93161 /* Blue Tip CalcUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -282,6 +295,25 @@
 				65B361111B71B6BF008B8094 /* Info.plist */,
 			);
 			path = "Tip Calculator";
+			sourceTree = "<group>";
+		};
+		65FF52381FB4FAF5002CA71F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6567A3201BFCF6DF0008A1E4 /* Interface.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65FF52391FB4FBC1002CA71F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6567A3311BFCF6E00008A1E4 /* InterfaceController.swift */,
+				65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */,
+				65FF52421FB50EC1002CA71F /* OptionsControllerLocalizationMethods.swift */,
+				65DB7FF51FB51AC400D93161 /* InterfaceControllerLocalizationMethods.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,7 +368,7 @@
 			);
 			name = "Blue Tip CalcTests";
 			productName = "Blue Tip CalcTests";
-			productReference = 65789B471F44A849001C89D9 /* Blue Tip CalcTests.xctest */;
+			productReference = 65DB7FF01FB50F6800D93161 /* Blue Tip CalcTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		657BB82F1F4608E80056FB65 /* Blue Tip CalcUITests */ = {
@@ -354,7 +386,7 @@
 			);
 			name = "Blue Tip CalcUITests";
 			productName = "Blue Tip CalcUITests";
-			productReference = 657BB8301F4608E80056FB65 /* Blue Tip CalcUITests.xctest */;
+			productReference = 65DB7FF11FB50F6800D93161 /* Blue Tip CalcUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		65B361011B71B6BF008B8094 /* Blue Tip Calculator */ = {
@@ -492,9 +524,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FF52431FB50EC1002CA71F /* OptionsControllerLocalizationMethods.swift in Sources */,
+				65DB7FF41FB512BF00D93161 /* BTCNumberFormatter.swift in Sources */,
 				65A5DF801BFD483F00AD3F92 /* OptionsController.swift in Sources */,
+				65FF523A1FB4FCB5002CA71F /* BTCTipCalculator.swift in Sources */,
 				6567A3321BFCF6E00008A1E4 /* InterfaceController.swift in Sources */,
+				65DB7FF61FB51AC400D93161 /* InterfaceControllerLocalizationMethods.swift in Sources */,
+				65FF523E1FB503EA002CA71F /* BTCTipPercent.swift in Sources */,
 				6570FB2B1FAA83E600FB0942 /* ExtensionDelegate.swift in Sources */,
+				65FF523B1FB4FCBF002CA71F /* TipCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +561,8 @@
 				659671481FAD26CD008F65CC /* BTCMainViewController.swift in Sources */,
 				65141F0D1FB239DD0092980E /* BTCTipCalculator.swift in Sources */,
 				65141F0B1FB234530092980E /* TipCalculator.swift in Sources */,
+				65DB7FF31FB511EF00D93161 /* BTCNumberFormatter.swift in Sources */,
+				65FF523D1FB503E7002CA71F /* BTCTipPercent.swift in Sources */,
 				65B361061B71B6BF008B8094 /* AppDelegate.swift in Sources */,
 				656488BB1FB4D3190074DE4E /* BTCKeyboardDelegate.swift in Sources */,
 			);
