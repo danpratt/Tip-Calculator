@@ -84,22 +84,23 @@ class BTCMainViewController: UIViewController {
     
     // Will control show or hide the split bill items
     @IBAction func splitBillButtonPressed(_ sender: UIButton) {
-        if numPeopleLabel.isHidden {
-            splitBillButtonTrailingConstraint.priority = .defaultHigh
-            splitBillButtonCenterConstraint.priority = .defaultLow
-            numPeopleLabel.isHidden = false
-            numPeopleSegment.isEnabled = true
-            numPeopleSegment.isHidden = false
-            calculateTip()
-        } else {
-            splitBillButtonTrailingConstraint.priority = .defaultLow
-            splitBillButtonCenterConstraint.priority = .defaultHigh
-            numPeopleLabel.isHidden = true
-            numPeopleSegment.isEnabled = false
-            numPeopleSegment.isHidden = true
-            tipCalculator.setNumPeopleSplitting(numPeople: 1)
-            calculateTip()
-        }
+        
+        // set constraint priorities so everything is displayed properly
+        splitBillButtonTrailingConstraint.priority = numPeopleLabel.isHidden == true ? .defaultHigh : .defaultLow
+        splitBillButtonCenterConstraint.priority = numPeopleLabel.isHidden == true ? .defaultLow : .defaultHigh
+        
+        // set labels to show or hide
+        
+        numPeopleLabel.isHidden = numPeopleLabel.isHidden == true ? false : true
+        numPeopleSegment.isEnabled = numPeopleSegment.isEnabled == true ? false : true
+        numPeopleSegment.isHidden = numPeopleSegment.isHidden == true ? false : true
+        
+        // set number of people
+        let people = numPeopleSegment.isHidden == true ? 1 : numPeopleSegment.selectedSegmentIndex + 1
+        tipCalculator.setNumPeopleSplitting(numPeople: people)
+        
+        // calculate the tip
+        calculateTip()
     }
     
     @IBAction func numPeopleSegmentChanged(_ sender: UISegmentedControl) {
