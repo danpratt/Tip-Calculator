@@ -33,7 +33,7 @@ extension TipCalculator {
         if !isBillBeingSplit {
             return total
         } else {
-            return total / Double(numPeopleSplittingBill)
+            return (billAmount / Double(numPeopleSplittingBill)) + amountToTip
         }
     }
     

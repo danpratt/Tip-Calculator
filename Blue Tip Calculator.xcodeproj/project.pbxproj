@@ -12,8 +12,7 @@
 		65141F0F1FB241740092980E /* BTCTipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65141F0E1FB241740092980E /* BTCTipCalculatorTests.swift */; };
 		652305621FAB89EC0015447E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6567A3201BFCF6DF0008A1E4 /* Interface.storyboard */; };
 		6530BE0B1FB17993008E30A1 /* BTCAppStoreReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530BE0A1FB17993008E30A1 /* BTCAppStoreReview.swift */; };
-		655B59491E46DADB00F7A03E /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B59481E46DADB00F7A03E /* Alerts.swift */; };
-		655B594B1E46DD6000F7A03E /* AppOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B594A1E46DD6000F7A03E /* AppOpenCount.swift */; };
+		656488BB1FB4D3190074DE4E /* BTCKeyboardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656488BA1FB4D3190074DE4E /* BTCKeyboardDelegate.swift */; };
 		6567A3221BFCF6DF0008A1E4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6567A3201BFCF6DF0008A1E4 /* Interface.storyboard */; };
 		6567A3241BFCF6DF0008A1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6567A3231BFCF6DF0008A1E4 /* Assets.xcassets */; };
 		6567A32B1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6567A32A1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -26,7 +25,6 @@
 		6596714B1FAD2A06008F65CC /* RateInAppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6596714A1FAD2A06008F65CC /* RateInAppStore.swift */; };
 		65A5DF801BFD483F00AD3F92 /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */; };
 		65B361061B71B6BF008B8094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B361051B71B6BF008B8094 /* AppDelegate.swift */; };
-		65B361081B71B6BF008B8094 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B361071B71B6BF008B8094 /* ViewController.swift */; };
 		65B3610B1B71B6BF008B8094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B361091B71B6BF008B8094 /* Main.storyboard */; };
 		65B3610D1B71B6BF008B8094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B3610C1B71B6BF008B8094 /* Assets.xcassets */; };
 		65B361101B71B6BF008B8094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B3610E1B71B6BF008B8094 /* LaunchScreen.storyboard */; };
@@ -94,8 +92,7 @@
 		65141F0C1FB239DD0092980E /* BTCTipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCTipCalculator.swift; sourceTree = "<group>"; };
 		65141F0E1FB241740092980E /* BTCTipCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCTipCalculatorTests.swift; sourceTree = "<group>"; };
 		6530BE0A1FB17993008E30A1 /* BTCAppStoreReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCAppStoreReview.swift; sourceTree = "<group>"; };
-		655B59481E46DADB00F7A03E /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
-		655B594A1E46DD6000F7A03E /* AppOpenCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOpenCount.swift; sourceTree = "<group>"; };
+		656488BA1FB4D3190074DE4E /* BTCKeyboardDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCKeyboardDelegate.swift; sourceTree = "<group>"; };
 		6567A31E1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Tip Wrist Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6567A3211BFCF6DF0008A1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		6567A3231BFCF6DF0008A1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,7 +122,6 @@
 		65A5DF7F1BFD483F00AD3F92 /* OptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
 		65B173B81BA2274600B56A55 /* Blue Tip Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Tip Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B361051B71B6BF008B8094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65B361071B71B6BF008B8094 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65B3610A1B71B6BF008B8094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65B3610C1B71B6BF008B8094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B3610F1B71B6BF008B8094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -171,6 +167,23 @@
 				65141F0C1FB239DD0092980E /* BTCTipCalculator.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		656488B81FB4D20F0074DE4E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				656488BA1FB4D3190074DE4E /* BTCKeyboardDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		656488B91FB4D2270074DE4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65B3610E1B71B6BF008B8094 /* LaunchScreen.storyboard */,
+				65B361091B71B6BF008B8094 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6567A31F1BFCF6DF0008A1E4 /* Blue Tip Wrist Calculator */ = {
@@ -259,16 +272,13 @@
 		65B361041B71B6BF008B8094 /* Tip Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				656488B91FB4D2270074DE4E /* View */,
+				656488B81FB4D20F0074DE4E /* Delegates */,
 				6530BE091FB17959008E30A1 /* Model */,
 				659671491FAD29DC008F65CC /* Protocols */,
 				659671461FAD2597008F65CC /* Controller */,
 				65B361051B71B6BF008B8094 /* AppDelegate.swift */,
-				65B361071B71B6BF008B8094 /* ViewController.swift */,
-				655B594A1E46DD6000F7A03E /* AppOpenCount.swift */,
-				655B59481E46DADB00F7A03E /* Alerts.swift */,
-				65B361091B71B6BF008B8094 /* Main.storyboard */,
 				65B3610C1B71B6BF008B8094 /* Assets.xcassets */,
-				65B3610E1B71B6BF008B8094 /* LaunchScreen.storyboard */,
 				65B361111B71B6BF008B8094 /* Info.plist */,
 			);
 			path = "Tip Calculator";
@@ -512,11 +522,9 @@
 				6530BE0B1FB17993008E30A1 /* BTCAppStoreReview.swift in Sources */,
 				659671481FAD26CD008F65CC /* BTCMainViewController.swift in Sources */,
 				65141F0D1FB239DD0092980E /* BTCTipCalculator.swift in Sources */,
-				65B361081B71B6BF008B8094 /* ViewController.swift in Sources */,
-				655B594B1E46DD6000F7A03E /* AppOpenCount.swift in Sources */,
 				65141F0B1FB234530092980E /* TipCalculator.swift in Sources */,
-				655B59491E46DADB00F7A03E /* Alerts.swift in Sources */,
 				65B361061B71B6BF008B8094 /* AppDelegate.swift in Sources */,
+				656488BB1FB4D3190074DE4E /* BTCKeyboardDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,7 +864,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Tip-Calculator";
 				PRODUCT_NAME = "Blue Tip Calc";
@@ -873,7 +881,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Tip-Calculator";
 				PRODUCT_NAME = "Blue Tip Calc";

@@ -8,7 +8,6 @@
 
 protocol RateInAppStore {
     var timesUserHasOpenedApp : Int? { get set }
-    var doNotBugToRate : Bool? { get set }
     var openTimesToCheck : Int { get }
     var shouldAskToRate : Bool { get }
 }

@@ -10,27 +10,29 @@ import Foundation
 
 struct BTCAppStoreReview: RateInAppStore {
     
+    // Properties
     var timesUserHasOpenedApp: Int? = UserDefaults.standard.integer(forKey: "timesUserHasOpenedApp_")
-    var doNotBugToRate: Bool? = UserDefaults.standard.bool(forKey: "doNotBugToRate_")
-    let openTimesToCheck: Int = 4
+    let openTimesToCheck: Int = 5
+    
+    init() {
+        // get rid of old doNotBugToRate key (will not be used anymore)
+        // NOTE: REMOVE THIS IN FOLLOWING RELEASE
+        UserDefaults.standard.removeObject(forKey: "doNotBugToRate_")
+        updateTimesUserHasOpenedApp()
+    }
     
     mutating func updateTimesUserHasOpenedApp() {
-        if timesUserHasOpenedApp == nil || doNotBugToRate == nil {
+        if timesUserHasOpenedApp == nil || timesUserHasOpenedApp! > openTimesToCheck {
             timesUserHasOpenedApp = 1
-            doNotBugToRate = false
-            setNotToBugUser()
-        } else if !doNotBugToRate! {
+        } else {
             timesUserHasOpenedApp = timesUserHasOpenedApp! + 1
-            setTimesUserHasOpenedApp()
         }
+        
+        setTimesUserHasOpenedApp()
     }
     
     func setTimesUserHasOpenedApp() {
         UserDefaults.standard.set(timesUserHasOpenedApp, forKey: "timesUserHasOpenedApp_")
     }
-    
-    func setNotToBugUser() {
-        UserDefaults.standard.set(doNotBugToRate, forKey: "doNotBugToRate_")
-    }
-    
+
 }

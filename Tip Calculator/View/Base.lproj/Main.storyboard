@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Blue_Tip_Calc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BTCMainViewController" customModule="Blue_Tip_Calc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -57,7 +57,6 @@
                                                 <accessibility key="accessibilityConfiguration" hint="Allows you to split the bill" label="Split Bill"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Jzm-oZ-7sN"/>
-                                                    <constraint firstAttribute="width" constant="30" id="bGD-TP-cd6"/>
                                                 </constraints>
                                                 <state key="normal" image="people"/>
                                                 <connections>
@@ -99,7 +98,7 @@
                                                 </constraints>
                                                 <state key="normal" image="convertButton"/>
                                                 <connections>
-                                                    <action selector="convertButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tLQ-E8-tEu"/>
+                                                    <action selector="convertButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afh-e8-M5d"/>
                                                 </connections>
                                             </button>
                                         </subviews>
