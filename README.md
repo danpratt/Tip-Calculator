@@ -22,10 +22,6 @@ This app was written while I was an even bigger newbie than I am now.  The entir
 - Photograph / Social sharing option
 - Receipt storage
 
-## Currently Working On...
-
-I am currently rewriting using Apple's recommended protocol oriented programming.  So far I have written a couple of protocols, and a few test cases.
-
 ## Contributing
 
 1. Fork it!
