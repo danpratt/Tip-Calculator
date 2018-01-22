@@ -16,11 +16,7 @@ This started out as an assignment in one of the free online Swift courses I was 
 
 This app was written while I was an even bigger newbie than I am now.  The entire code should probably be mostly re-written.  In addition there are several features I would like to eventually add to this app:
 
-- 3D Touch support for iOS version
-- Support for custom tip amount
-- Round option so you can round a tip to the nearest dollar amount.
-- Photograph / Social sharing option
-- Receipt storage
+- Option to round to nearest dollar
 
 ## Contributing
 
