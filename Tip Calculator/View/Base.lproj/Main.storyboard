@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,40 +52,28 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ReA-Be-p8v" userLabel="Header Stack View">
-                                <rect key="frame" x="16" y="28" width="343" height="140"/>
+                                <rect key="frame" x="16" y="28" width="343" height="158"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="emd-Yr-LrS" userLabel="Enter Bill Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="30" translatesAutoresizingMaskIntoConstraints="NO" id="080-VV-BFc">
-                                                <rect key="frame" x="0.0" y="0.0" width="25" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter total bill here" clearsOnBeginEditing="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="96g-vE-F4R">
-                                                <rect key="frame" x="33" y="0.0" width="272" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter total bill here" minimumFontSize="9" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="96g-vE-F4R">
+                                                <rect key="frame" x="33" y="0.0" width="310" height="48"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Enter the total bill amount here." label="Enter Amount"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nm-wh-GeD" userLabel="Calculate Tip Button">
-                                                <rect key="frame" x="313" y="0.0" width="30" height="30"/>
-                                                <accessibility key="accessibilityConfiguration" label="Calculate Tip"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="8GA-H8-2PY"/>
-                                                    <constraint firstAttribute="height" constant="30" id="uRl-QN-cqU"/>
-                                                </constraints>
-                                                <state key="normal" image="convertButton"/>
-                                                <connections>
-                                                    <action selector="convertButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afh-e8-M5d"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IJv-ZX-rcB" userLabel="Labels Stack View">
-                                        <rect key="frame" x="0.0" y="38" width="343" height="66"/>
+                                        <rect key="frame" x="0.0" y="56" width="343" height="66"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yv8-ZI-deY" userLabel="Visible Labels Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="66"/>
@@ -108,13 +96,13 @@
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="66"/>
                                                 <subviews>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Tip Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="75" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-gG-TrZ">
-                                                        <rect key="frame" x="-139" y="-66" width="98.5" height="0.0"/>
+                                                        <rect key="frame" x="-139" y="-84" width="98.5" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total With Tip" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="75" translatesAutoresizingMaskIntoConstraints="NO" id="arf-tt-4NZ">
-                                                        <rect key="frame" x="-187.5" y="-66" width="147" height="0.0"/>
+                                                        <rect key="frame" x="-187.5" y="-84" width="147" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -124,7 +112,7 @@
                                         </subviews>
                                     </stackView>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="JDJ-wQ-B2H">
-                                        <rect key="frame" x="0.0" y="112" width="343" height="29"/>
+                                        <rect key="frame" x="0.0" y="130" width="343" height="29"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <segments>
                                             <segment title="10%"/>
@@ -181,7 +169,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="convertButton" width="60" height="60"/>
         <image name="people" width="130" height="146"/>
     </resources>
 </document>

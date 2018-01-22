@@ -27,7 +27,6 @@ class BTCMainViewController: UIViewController {
     @IBOutlet weak var splitBillButtonCenterConstraint: NSLayoutConstraint!
     @IBOutlet weak var splitBillButtonTrailingConstraint: NSLayoutConstraint!
     
-    
     // MARK: - Objects
     
     // Tracks app opens to determine if app store review should be displayed or not
@@ -35,6 +34,11 @@ class BTCMainViewController: UIViewController {
     
     // Holds bill and calculates tip and total amount
     var tipCalculator = BTCTipCalculator()
+    
+    // MARK: - Properties
+    
+    // Tracks to see if textfield has been used
+    var hasTextFieldBeenUsed = false
     
     override func viewDidLoad() {
         // set button image to aspect fit
@@ -47,6 +51,8 @@ class BTCMainViewController: UIViewController {
         
         // Set the textfield delegate
         billTextField.delegate = self
+        billTextField.addTarget(self, action: #selector(billTextFieldDidChange), for: .editingChanged)
+        billTextField.addDoneButtonToKeyboard(myAction: #selector(billTextField.resignFirstResponder))
     }
     
     // MARK: - Button Actions
@@ -96,13 +102,15 @@ class BTCMainViewController: UIViewController {
     // MARK: - Calculate Tip
     
     func calculateTip() {
-        guard let billText = billTextField.text else {
+        guard var billText = billTextField.text else {
             fatalError("Error getting text from billTextField")
         }
         
         // check for empty string, and if there is nothing entered, do nothing
-        if billText == "" {
+        if !hasTextFieldBeenUsed {
             return
+        } else if billText == "" {
+            billText = "0"
         }
         
         // setup the number formatter
@@ -128,7 +136,11 @@ class BTCMainViewController: UIViewController {
             tipLabel.isHidden = false
             totalWithTip.isHidden = false
         }
-        
+    }
+    
+    @objc private func billTextFieldDidChange() {
+        hasTextFieldBeenUsed = true
+        calculateTip()
     }
 }
 
