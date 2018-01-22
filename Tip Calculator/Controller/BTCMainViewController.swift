@@ -40,6 +40,9 @@ class BTCMainViewController: UIViewController {
     // Tracks to see if textfield has been used
     var hasTextFieldBeenUsed = false
     
+    // used to setup from quick launch
+    var quickLaunchTipSegment: Int? = nil
+    
     override func viewDidLoad() {
         // set button image to aspect fit
         self.numberOfPeopleButton.imageView?.contentMode = .scaleAspectFit
@@ -47,6 +50,11 @@ class BTCMainViewController: UIViewController {
         // check to see if app store rating request should be made
         if rateInAppStore.shouldAskToRate {
             SKStoreReviewController.requestReview()
+        }
+        
+        // if launching from quick launch set the tip segment
+        if let segment = quickLaunchTipSegment {
+            tipAmountSegment.selectedSegmentIndex = segment
         }
         
         // Set the textfield delegate
@@ -69,6 +77,8 @@ class BTCMainViewController: UIViewController {
         
         tipCalculator.setTipPercentValue(tipPercent: TipPercentValue.fromHashValue(hashValue: currentSegment))
         calculateTip()
+        // setup 3D touch shortcut
+        setup3DTouchShortcut()
     }
     
     // Will control show or hide the split bill items
@@ -141,6 +151,32 @@ class BTCMainViewController: UIViewController {
     @objc private func billTextFieldDidChange() {
         hasTextFieldBeenUsed = true
         calculateTip()
+    }
+    
+    private func setup3DTouchShortcut() {
+        let tipStringValue = String(Int(tipCalculator.tipPercentValue.rawValue * 100.0))
+        let shortcutTitle = tipStringValue + "%"
+        let lastTipValueShortcut = UIMutableApplicationShortcutItem(type: "com.blaumagier.Tip-Calculator.LastTipShortcut", localizedTitle: shortcutTitle, localizedSubtitle: localizedSubtitle(), icon: UIApplicationShortcutIcon(type: UIApplicationShortcutIconType.favorite), userInfo: ["tipValueSegment" : tipCalculator.tipPercentValue.hashValue])
+        
+        // Set the shortcut item
+        UIApplication.shared.shortcutItems = [lastTipValueShortcut]
+    }
+    
+    private func localizedSubtitle() -> String {
+        guard let language = Locale.current.languageCode else {
+            return "Last tip"
+        }
+        
+        switch language {
+        case "nl":
+            return "Laatste tip"
+        case "zh":
+            return "最后的提示"
+        case "de":
+            return "Letzte trinkgeld"
+        default:
+            return "Last tip"
+        }
     }
 }
 
