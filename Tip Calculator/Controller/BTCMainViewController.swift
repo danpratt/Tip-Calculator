@@ -64,11 +64,6 @@ class BTCMainViewController: UIViewController {
     }
     
     // MARK: - Button Actions
-    /* Called when convert button is tapped */
-    @IBAction func convertButtonTapped(_ sender: UIButton) {
-        billTextField.resignFirstResponder()
-        calculateTip()
-    }
     
     @IBAction func tipAmountSegmentValueChanged(_ sender: UISegmentedControl) {
         let currentSegment = tipAmountSegment.selectedSegmentIndex
@@ -119,7 +114,7 @@ class BTCMainViewController: UIViewController {
         // check for empty string, and if there is nothing entered, do nothing
         if !hasTextFieldBeenUsed {
             return
-        } else if billText == "" {
+        } else if billText == "" || billText == "." {
             billText = "0"
         }
         

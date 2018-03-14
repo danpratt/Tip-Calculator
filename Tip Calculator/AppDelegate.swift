@@ -11,7 +11,7 @@ import UIKit
 // Enum for handling 3D touch homescreen shortcuts
 enum ShortcutIDentifier: String {
     case TenPercentShortcut
-    case FifteenPercentShortcut
+    case EighteenPercentShortcut
     case TwentyPercentShortcut
     case LastTipShortcut
     
@@ -68,8 +68,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         switch shortcutIdentifier {
         case .TenPercentShortcut:
             return setTipSegment(to: 0)
-        case .FifteenPercentShortcut:
-            return setTipSegment(to: 1)
+        case .EighteenPercentShortcut:
+            return setTipSegment(to: 2)
         case .TwentyPercentShortcut:
             return setTipSegment(to: 3)
         case .LastTipShortcut:

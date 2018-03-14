@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.5</string>
+	<string>2.5.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0101222017</string>
+	<string>0103142017</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationShortcutItems</key>
@@ -34,15 +34,15 @@
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>15%</string>
+			<string>18%</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER).FifteenPercentShortcut</string>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).EighteenPercentShortcut</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>20%</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER). TenPercentShortcut</string>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).TwentyPercentShortcut</string>
 		</dict>
 	</array>
 	<key>UILaunchStoryboardName</key>
