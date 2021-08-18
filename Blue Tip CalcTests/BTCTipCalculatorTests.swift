@@ -64,7 +64,7 @@ class BTCTipCalculatorTests: XCTestCase {
     
     func testSetTipAmount_totalsCalculate() {
         tipCalculator.setBillAmount(billAmount: 10.99)
-        tipCalculator.setTipPercentValue(tipPercent: 0.20)
+        tipCalculator.setTipPercentValue(tipPercent: TipPercentValue(rawValue: 0.20)!)
         
         // make sure that calculated tip is correct
         let tipAmountString = numberFormatter.string(from: tipCalculator.amountToTip as NSNumber)
@@ -80,7 +80,7 @@ class BTCTipCalculatorTests: XCTestCase {
     func testSplitBill_splitBy2_expectedAndActualMatch() {
         // setup
         tipCalculator.setBillAmount(billAmount: 10.00)
-        tipCalculator.setTipPercentValue(tipPercent: 0.10)
+        tipCalculator.setTipPercentValue(tipPercent: TipPercentValue(rawValue: 0.10)!)
         tipCalculator.setNumPeopleSplitting(numPeople: 2)
         
         // get rounded number for tip amount
@@ -101,7 +101,7 @@ class BTCTipCalculatorTests: XCTestCase {
     func testSplitBill_splitBy3_expectedAndActualMatch() {
         // setup
         tipCalculator.setBillAmount(billAmount: 32.47)
-        tipCalculator.setTipPercentValue(tipPercent: 0.15)
+        tipCalculator.setTipPercentValue(tipPercent: TipPercentValue(rawValue: 0.15)!)
         tipCalculator.setNumPeopleSplitting(numPeople: 3)
         
         // get rounded number for tip amount
